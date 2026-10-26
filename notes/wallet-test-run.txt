@@ -1,0 +1,30 @@
+plan {
+  market: 'XRP-PERP',
+  pool: '0x7058579f3248559963f79adb937c6de9f953e060',
+  mark: '1.2962033708185',
+  price: '0.6481',
+  quantity: '6.9',
+  approve: '10 USDso'
+}
+before { wallet: '100', bankUnlocked: '0', bankLocked: '0' }
+approve 0x0d2838604cbdabc62d7f6ab240fdb7275ff5f411e119678324be25eb638611bb success
+place 0x882f6887c0b1cb0261dee5b51bf375a5efc33a7e8437a671aedad97d5cbf4d62 success orderId 1199038364791127291863 pull events in receipt: 1
+after place { wallet: '99.7764055', bankUnlocked: '0', bankLocked: '0' }
+cancel 0x25d1ffcb9d5d2a9ed51acd44602a458be0e6026b3b432a3b9aaa6824e3907c60
+after cancel { wallet: '99.7764055', bankUnlocked: '0.2235945', bankLocked: '0' }
+indexer {
+  "rows": [
+    {
+      "id": "0x882f6887c0b1cb0261dee5b51bf375a5efc33a7e8437a671aedad97d5cbf4d62_66",
+      "account": "0xe488bb2bd58e9c425f525293856faa529f7b1db3",
+      "pool": "0x7058579f3248559963f79adb937c6de9f953e060",
+      "orderId": "1199038364791127291863",
+      "source": "OwnWallet",
+      "amount": "223594500000000000",
+      "blockNumber": "33851388"
+    }
+  ],
+  "indexerHead": 33851409,
+  "placeBlock": "33851388"
+}
+no indexer gap shown by this run

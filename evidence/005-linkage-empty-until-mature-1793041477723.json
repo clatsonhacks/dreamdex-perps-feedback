@@ -1,0 +1,62 @@
+{
+  "at": "2026-10-26T19:04:34.748Z",
+  "block": "33889745",
+  "blockTime": "1793041141",
+  "registry": "0x5b3C5Bf1F7AdA852e8AA783f6299932E32073aFb",
+  "child": "0x7400346f9492cf6Ac73c13A3B2D0b864b0F5080d",
+  "main": "0xE488bb2bd58E9C425F525293856FAA529f7b1db3",
+  "linkMaturitySeconds": "3600",
+  "sdk": {
+    "getPerpWalletLinkage_child": {
+      "main": "0x0000000000000000000000000000000000000000",
+      "members": [],
+      "linkedAt": "1793041137",
+      "maturesAt": "1793044737",
+      "isChild": false,
+      "isMain": false
+    },
+    "getPerpWalletLinkage_main": {
+      "main": "0x0000000000000000000000000000000000000000",
+      "members": [],
+      "linkedAt": "0",
+      "maturesAt": "0",
+      "isChild": false,
+      "isMain": false
+    },
+    "quotePerpFundingPayer_child": {
+      "funded": true,
+      "payer": "0xE488bb2bd58E9C425F525293856FAA529f7b1db3"
+    },
+    "getPerpMainFunding_child": {
+      "principal": "222904500000000000",
+      "payer": "0xE488bb2bd58E9C425F525293856FAA529f7b1db3",
+      "withdrawableFromPrincipal": "0"
+    },
+    "listPerpLinkedChildren_main": [
+      "0x7400346f9492cf6Ac73c13A3B2D0b864b0F5080d"
+    ]
+  },
+  "registryRaw": {
+    "mainOf_child": "0xE488bb2bd58E9C425F525293856FAA529f7b1db3",
+    "areLinked": true,
+    "groupOf_child": [
+      "0xE488bb2bd58E9C425F525293856FAA529f7b1db3",
+      "0x7400346f9492cf6Ac73c13A3B2D0b864b0F5080d"
+    ],
+    "linkageOf_child": {
+      "main": "0x0000000000000000000000000000000000000000",
+      "members": [],
+      "linkedAt": "1793041137",
+      "maturesAt": "1793044737"
+    },
+    "linkageOf_main": {
+      "main": "0x0000000000000000000000000000000000000000",
+      "members": [],
+      "linkedAt": "0",
+      "maturesAt": "0"
+    }
+  },
+  "linkAgeSeconds": "4",
+  "secondsUntilMature": "3596",
+  "principalFunded": "0.2229045"
+}

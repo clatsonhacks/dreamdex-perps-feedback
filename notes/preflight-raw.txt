@@ -1,0 +1,422 @@
+address 0xE488bb2bd58E9C425F525293856FAA529f7b1db3
+STT 50
+wallet USDso 100
+allowance -> MarginBank 0
+MarginBank account { unlocked: '0', locked: '0', pools: 0, status: 'Healthy' }
+voucher creditFloor 0
+OK: no Arena paper USDso on this account.
+trader available: true
+plan {
+  market: 'XRP-PERP',
+  pool: '0x7058579f3248559963f79adb937c6de9f953e060',
+  mark: '1.296250026029',
+  price: '0.6481',
+  quantity: '6.9',
+  notional: '4.47189'
+}
+file:///C:/Users/clats/VSC/bugboundy/node_modules/@somnia-chain/markets-sdk/dist/revert.js:260
+        return new RpcError(operation, detail, { cause: caught });
+               ^
+
+RpcError: @somnia-chain/markets-sdk: rpc readContract getAccountState failed: The request took too long to respond.
+    at Module.toSdkError (file:///C:/Users/clats/VSC/bugboundy/node_modules/@somnia-chain/markets-sdk/dist/revert.js:260:16)
+    at decorated.readContract (file:///C:/Users/clats/VSC/bugboundy/node_modules/@somnia-chain/markets-sdk/dist/client.js:1046:30)
+    at async Promise.all (index 1)
+    ... 2 lines matching cause stack trace ...
+    at async <anonymous> (C:\Users\clats\VSC\bugboundy\scripts\wallet-preflight.mts:35:12) {
+  operation: 'readContract getAccountState',
+  [cause]: ContractFunctionExecutionError: The request took too long to respond.
+  
+  URL: wss://api.hideki2.infra.testnet.somnia.network/ws
+  Request body: {"method":"eth_call","params":[{"data":"0x9ee2735b000000000000000000000000e488bb2bd58e9c425f525293856faa529f7b1db3","to":"0x478769E1177C0773c43A593DCCc4Ad15F15F1394"},"0x2046a72"]}
+   
+  Raw Call Arguments:
+    to:    0x478769E1177C0773c43A593DCCc4Ad15F15F1394
+    data:  0x9ee2735b000000000000000000000000e488bb2bd58e9c425f525293856faa529f7b1db3
+   
+  Contract Call:
+    address:   0x478769E1177C0773c43A593DCCc4Ad15F15F1394
+    function:  getAccountState(address account)
+    args:                     (0xE488bb2bd58E9C425F525293856FAA529f7b1db3)
+  
+  Docs: https://viem.sh/docs/contract/readContract
+  Details: The request timed out.
+  Version: viem@2.57.10
+      at getContractError (C:\Users\clats\VSC\bugboundy\node_modules\viem\utils\errors\getContractError.ts:84:10)
+      at readContract (C:\Users\clats\VSC\bugboundy\node_modules\viem\actions\public\readContract.ts:140:11)
+      at async actions.<computed> [as readContract] (file:///C:/Users/clats/VSC/bugboundy/node_modules/@somnia-chain/markets-sdk/dist/client.js:962:24)
+      ... 4 lines matching cause stack trace ...
+      at async <anonymous> (C:\Users\clats\VSC\bugboundy\scripts\wallet-preflight.mts:35:12) {
+    cause: CallExecutionError: The request took too long to respond.
+    
+    URL: wss://api.hideki2.infra.testnet.somnia.network/ws
+    Request body: {"method":"eth_call","params":[{"data":"0x9ee2735b000000000000000000000000e488bb2bd58e9c425f525293856faa529f7b1db3","to":"0x478769E1177C0773c43A593DCCc4Ad15F15F1394"},"0x2046a72"]}
+     
+    Raw Call Arguments:
+      to:    0x478769E1177C0773c43A593DCCc4Ad15F15F1394
+      data:  0x9ee2735b000000000000000000000000e488bb2bd58e9c425f525293856faa529f7b1db3
+    
+    Details: The request timed out.
+    Version: viem@2.57.10
+        at getCallError (C:\Users\clats\VSC\bugboundy\node_modules\viem\utils\errors\getCallError.ts:42:10)
+        at call (C:\Users\clats\VSC\bugboundy\node_modules\viem\_esm\actions\public\call.js:175:15)
+        at async readContract (C:\Users\clats\VSC\bugboundy\node_modules\viem\actions\public\readContract.ts:124:22)
+        at async actions.<computed> [as readContract] (file:///C:/Users/clats/VSC/bugboundy/node_modules/@somnia-chain/markets-sdk/dist/client.js:962:24)
+        at async decorated.readContract (file:///C:/Users/clats/VSC/bugboundy/node_modules/@somnia-chain/markets-sdk/dist/client.js:1039:24)
+        at async Promise.all (index 1)
+        at async readPerpPlacementState (file:///C:/Users/clats/VSC/bugboundy/node_modules/@somnia-chain/markets-sdk/dist/perp/margin.js:1191:158)
+        at async Module.previewPerpOrderMargin (file:///C:/Users/clats/VSC/bugboundy/node_modules/@somnia-chain/markets-sdk/dist/perp/margin.js:1290:16)
+        at async <anonymous> (C:\Users\clats\VSC\bugboundy\scripts\wallet-preflight.mts:35:12) {
+      cause: TimeoutError: The request took too long to respond.
+      
+      URL: wss://api.hideki2.infra.testnet.somnia.network/ws
+      Request body: {"method":"eth_call","params":[{"data":"0x9ee2735b000000000000000000000000e488bb2bd58e9c425f525293856faa529f7b1db3","to":"0x478769E1177C0773c43A593DCCc4Ad15F15F1394"},"0x2046a72"]}
+      
+      Details: The request timed out.
+      Version: viem@2.57.10
+          at Timeout.<anonymous> (file:///C:/Users/clats/VSC/bugboundy/node_modules/@somnia-chain/markets-sdk/dist/client.js:650:23)
+          at listOnTimeout (node:internal/timers:594:17)
+          at process.processTimers (node:internal/timers:529:7) {
+        details: 'The request timed out.',
+        docsPath: undefined,
+        metaMessages: [
+          'URL: wss://api.hideki2.infra.testnet.somnia.network/ws',
+          'Request body: {"method":"eth_call","params":[{"data":"0x9ee2735b000000000000000000000000e488bb2bd58e9c425f525293856faa529f7b1db3","to":"0x478769E1177C0773c43A593DCCc4Ad15F15F1394"},"0x2046a72"]}'
+        ],
+        shortMessage: 'The request took too long to respond.',
+        version: '2.57.10',
+        url: 'wss://api.hideki2.infra.testnet.somnia.network/ws'
+      },
+      details: 'The request timed out.',
+      docsPath: undefined,
+      metaMessages: [
+        'URL: wss://api.hideki2.infra.testnet.somnia.network/ws',
+        'Request body: {"method":"eth_call","params":[{"data":"0x9ee2735b000000000000000000000000e488bb2bd58e9c425f525293856faa529f7b1db3","to":"0x478769E1177C0773c43A593DCCc4Ad15F15F1394"},"0x2046a72"]}',
+        ' ',
+        'Raw Call Arguments:',
+        '  to:    0x478769E1177C0773c43A593DCCc4Ad15F15F1394\n' +
+          '  data:  0x9ee2735b000000000000000000000000e488bb2bd58e9c425f525293856faa529f7b1db3'
+      ],
+      shortMessage: 'The request took too long to respond.',
+      version: '2.57.10'
+    },
+    details: 'The request timed out.',
+    docsPath: '/docs/contract/readContract',
+    metaMessages: [
+      'URL: wss://api.hideki2.infra.testnet.somnia.network/ws',
+      'Request body: {"method":"eth_call","params":[{"data":"0x9ee2735b000000000000000000000000e488bb2bd58e9c425f525293856faa529f7b1db3","to":"0x478769E1177C0773c43A593DCCc4Ad15F15F1394"},"0x2046a72"]}',
+      ' ',
+      'Raw Call Arguments:',
+      '  to:    0x478769E1177C0773c43A593DCCc4Ad15F15F1394\n' +
+        '  data:  0x9ee2735b000000000000000000000000e488bb2bd58e9c425f525293856faa529f7b1db3',
+      ' ',
+      'Contract Call:',
+      '  address:   0x478769E1177C0773c43A593DCCc4Ad15F15F1394\n' +
+        '  function:  getAccountState(address account)\n' +
+        '  args:                     (0xE488bb2bd58E9C425F525293856FAA529f7b1db3)'
+    ],
+    shortMessage: 'The request took too long to respond.',
+    version: '2.57.10',
+    abi: [
+      {
+        name: 'getSystemConfig',
+        type: 'function',
+        stateMutability: 'view',
+        inputs: [],
+        outputs: [ { type: 'tuple', components: [Array] } ]
+      },
+      {
+        name: 'getPosition',
+        type: 'function',
+        stateMutability: 'view',
+        inputs: [
+          { type: 'address', name: 'account' },
+          { type: 'address', name: 'perpPool' }
+        ],
+        outputs: [ { type: 'tuple', components: [Array] } ]
+      },
+      {
+        name: 'getAccountState',
+        type: 'function',
+        stateMutability: 'view',
+        inputs: [ { type: 'address', name: 'account' } ],
+        outputs: [ { type: 'tuple', components: [Array] } ]
+      },
+      {
+        name: 'getAccountEquity',
+        type: 'function',
+        stateMutability: 'view',
+        inputs: [ { type: 'address', name: 'account' } ],
+        outputs: [ { type: 'int256' } ]
+      },
+      {
+        name: 'getWithdrawableCollateral',
+        type: 'function',
+        stateMutability: 'view',
+        inputs: [ { type: 'address', name: 'account' } ],
+        outputs: [ { type: 'uint256' } ]
+      },
+      {
+        name: 'getActivePerpPools',
+        type: 'function',
+        stateMutability: 'view',
+        inputs: [ { type: 'address', name: 'account' } ],
+        outputs: [ { type: 'address[]' } ]
+      },
+      {
+        name: 'getAccountHealth',
+        type: 'function',
+        stateMutability: 'view',
+        inputs: [ { type: 'address', name: 'account' } ],
+        outputs: [
+          { type: 'int256', name: 'equity' },
+          { type: 'uint256', name: 'imReq' },
+          { type: 'uint256', name: 'mmReq' },
+          { type: 'uint256', name: 'cmReq' }
+        ]
+      },
+      {
+        name: 'getMarginStatus',
+        type: 'function',
+        stateMutability: 'view',
+        inputs: [ { type: 'address', name: 'account' } ],
+        outputs: [ { type: 'uint8' } ]
+      },
+      {
+        name: 'tryGetAccountEquity',
+        type: 'function',
+        stateMutability: 'view',
+        inputs: [ { type: 'address', name: 'account' } ],
+        outputs: [
+          { type: 'bool', name: 'ok' },
+          { type: 'int256', name: 'equity' }
+        ]
+      },
+      {
+        name: 'getCollateralBasis',
+        type: 'function',
+        stateMutability: 'view',
+        inputs: [ { type: 'address', name: 'account' } ],
+        outputs: [ { type: 'uint256' } ]
+      },
+      {
+        name: 'getInsuranceFundAddress',
+        type: 'function',
+        stateMutability: 'view',
+        inputs: [],
+        outputs: [ { type: 'address' } ]
+      },
+      {
+        name: 'isInsuranceFundCoverageEnabled',
+        type: 'function',
+        stateMutability: 'view',
+        inputs: [ { type: 'address', name: 'perpPool' } ],
+        outputs: [ { type: 'bool' } ]
+      },
+      {
+        name: 'getPoolTier',
+        type: 'function',
+        stateMutability: 'view',
+        inputs: [ { type: 'address', name: 'perpPool' } ],
+        outputs: [ { type: 'uint256' } ]
+      },
+      {
+        name: 'quoteMeetsIMForOrder',
+        type: 'function',
+        stateMutability: 'view',
+        inputs: [
+          { type: 'address', name: 'account' },
+          { type: 'address', name: 'perpPool' },
+          { type: 'uint256', name: 'additionalSize' },
+          { type: 'uint256', name: 'orderPrice' }
+        ],
+        outputs: [ { type: 'bool' } ]
+      },
+      {
+        name: 'meetsIMForFill',
+        type: 'function',
+        stateMutability: 'view',
+        inputs: [
+          { type: 'address', name: 'account' },
+          { type: 'address', name: 'perpPool' },
+          { type: 'uint256', name: 'additionalSize' },
+          { type: 'uint256', name: 'orderPrice' }
+        ],
+        outputs: [ { type: 'bool' } ]
+      },
+      {
+        name: 'quoteOrderTopUp',
+        type: 'function',
+        stateMutability: 'view',
+        inputs: [
+          { type: 'address', name: 'account' },
+          { type: 'address', name: 'perpPool' },
+          { type: 'uint256', name: 'lockAmount' },
+          { type: 'uint256', name: 'feeHeadroom' },
+          { type: 'uint256', name: 'increasingQuantity' },
+          { type: 'uint256', name: 'orderPrice' }
+        ],
+        outputs: [ { type: 'uint256', name: 'topUp' } ]
+      },
+      {
+        name: 'isolationAllowsMarket',
+        type: 'function',
+        stateMutability: 'view',
+        inputs: [
+          { type: 'address', name: 'account' },
+          { type: 'address', name: 'market' }
+        ],
+        outputs: [ { type: 'bool' } ]
+      },
+      {
+        name: 'isolated',
+        type: 'function',
+        stateMutability: 'view',
+        inputs: [ { type: 'address', name: 'account' } ],
+        outputs: [ { type: 'bool' } ]
+      },
+      {
+        name: 'getMaxLeverage',
+        type: 'function',
+        stateMutability: 'view',
+        inputs: [
+          { type: 'address', name: 'account' },
+          { type: 'address', name: 'perpPool' }
+        ],
+        outputs: [ { type: 'uint16' } ]
+      },
+      {
+        name: 'getMaxLeverageLimit',
+        type: 'function',
+        stateMutability: 'view',
+        inputs: [],
+        outputs: [ { type: 'uint16' } ]
+      },
+      {
+        name: 'getCreditFloor',
+        type: 'function',
+        stateMutability: 'view',
+        inputs: [ { type: 'address', name: 'account' } ],
+        outputs: [ { type: 'uint256' } ]
+      },
+      {
+        name: 'getVoucherLeverageCap',
+        type: 'function',
+        stateMutability: 'view',
+        inputs: [],
+        outputs: [ { type: 'uint16' } ]
+      },
+      {
+        name: 'isVoucherMarketAllowed',
+        type: 'function',
+        stateMutability: 'view',
+        inputs: [ { type: 'address', name: 'perpPool' } ],
+        outputs: [ { type: 'bool' } ]
+      },
+      {
+        name: 'getCreditGranter',
+        type: 'function',
+        stateMutability: 'view',
+        inputs: [],
+        outputs: [ { type: 'address' } ]
+      },
+      {
+        name: 'isPerpPoolRegistered',
+        type: 'function',
+        stateMutability: 'view',
+        inputs: [ { type: 'address', name: 'perpPool' } ],
+        outputs: [ { type: 'bool' } ]
+      },
+      {
+        name: 'getSideHoldersPaginated',
+        type: 'function',
+        stateMutability: 'view',
+        inputs: [
+          { type: 'address', name: 'pool' },
+          { type: 'bool', name: 'isLong' },
+          { type: 'uint256', name: 'start' },
+          { type: 'uint256', name: 'count' }
+        ],
+        outputs: [ { type: 'address[]', name: 'holders' } ]
+      },
+      {
+        name: 'getSideHolderStatesPaginated',
+        type: 'function',
+        stateMutability: 'view',
+        inputs: [
+          { type: 'address', name: 'pool' },
+          { type: 'bool', name: 'isLong' },
+          { type: 'uint256', name: 'start' },
+          { type: 'uint256', name: 'count' }
+        ],
+        outputs: [
+          { type: 'tuple[]', name: 'states', components: [Array] },
+          { type: 'uint256', name: 'listLength' },
+          { type: 'bool', name: 'poolPriceable' },
+          { type: 'tuple', name: 'poolSnapshot', components: [Array] }
+        ]
+      },
+      {
+        name: 'getBankruptcyPrice',
+        type: 'function',
+        stateMutability: 'view',
+        inputs: [
+          { type: 'address', name: 'account' },
+          { type: 'address', name: 'perpPool' }
+        ],
+        outputs: [ { type: 'uint256', name: 'price' } ]
+      },
+      { name: 'NoOpenPosition', type: 'error', inputs: [] },
+      { name: 'AdlZeroNotional', type: 'error', inputs: [] },
+      {
+        name: 'getLeverageImSurcharge',
+        type: 'function',
+        stateMutability: 'view',
+        inputs: [ { type: 'address', name: 'account' } ],
+        outputs: [ { type: 'uint256' } ]
+      },
+      {
+        name: 'quoteFundingPayer',
+        type: 'function',
+        stateMutability: 'view',
+        inputs: [ { type: 'address', name: 'child' } ],
+        outputs: [ { type: 'address', name: 'payer' } ]
+      },
+      {
+        name: 'quoteWalletCapacity',
+        type: 'function',
+        stateMutability: 'view',
+        inputs: [ { type: 'address', name: 'wallet' } ],
+        outputs: [ { type: 'uint256' } ]
+      },
+      {
+        name: 'getMainFundedPrincipal',
+        type: 'function',
+        stateMutability: 'view',
+        inputs: [ { type: 'address', name: 'child' } ],
+        outputs: [ { type: 'uint256' } ]
+      },
+      {
+        name: 'getMainFundingPayer',
+        type: 'function',
+        stateMutability: 'view',
+        inputs: [ { type: 'address', name: 'child' } ],
+        outputs: [ { type: 'address' } ]
+      },
+      {
+        name: 'getLinkedWalletRegistry',
+        type: 'function',
+        stateMutability: 'view',
+        inputs: [],
+        outputs: [ { type: 'address' } ]
+      }
+    ],
+    args: [ '0xE488bb2bd58E9C425F525293856FAA529f7b1db3' ],
+    contractAddress: '0x478769E1177C0773c43A593DCCc4Ad15F15F1394',
+    formattedArgs: undefined,
+    functionName: 'getAccountState',
+    sender: undefined
+  }
+}
+
+Node.js v22.12.0

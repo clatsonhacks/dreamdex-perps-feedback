@@ -1,0 +1,41 @@
+{
+  "at": "2026-10-26T17:09:05.011Z",
+  "rows": [
+    {
+      "market": "ZRO-PERP",
+      "block": "33823810",
+      "openInterest": "12167.2",
+      "sumLong": "12167.2",
+      "sumShort": "12167.2",
+      "longMinusShort": "0",
+      "oiMinusLong": "0",
+      "holders": {
+        "long": 18,
+        "short": 7
+      },
+      "flatSlots": 0,
+      "wrongSide": 0,
+      "failed": 0,
+      "odd": [],
+      "ok": true
+    },
+    {
+      "market": "ETH-PERP",
+      "block": "33823834",
+      "openInterest": "693.9774",
+      "sumLong": "693.9774",
+      "sumShort": "693.9774",
+      "longMinusShort": "0",
+      "oiMinusLong": "0",
+      "holders": {
+        "long": 316,
+        "short": 170
+      },
+      "flatSlots": 0,
+      "wrongSide": 0,
+      "failed": 0,
+      "odd": [],
+      "ok": true
+    }
+  ]
+}

@@ -1,0 +1,315 @@
+pre {
+  "registry": "0x5b3C5Bf1F7AdA852e8AA783f6299932E32073aFb",
+  "maxChildren": "12",
+  "mainSTT": "49.978406216",
+  "childSTT": "0",
+  "childCreditFloor": "0",
+  "mainCreditFloor": "0",
+  "mainLinkage": {
+    "main": "0x0000000000000000000000000000000000000000",
+    "members": [],
+    "linkedAt": "0",
+    "maturesAt": "0",
+    "isChild": false,
+    "isMain": false
+  },
+  "mainCapacity": "9.7764055",
+  "childCapacity": "0",
+  "order": {
+    "market": "XRP-PERP",
+    "pool": "0x7058579f3248559963f79adb937c6de9f953e060",
+    "mark": "1.292271470118",
+    "price": "0.6461",
+    "quantity": "6.9"
+  }
+}
+s0_start {
+  "label": "s0_start",
+  "mainWallet": "99.7764055",
+  "mainAllowance": "9.7764055",
+  "mainBankUnlocked": "0.2235945",
+  "childWallet": "0",
+  "childBankUnlocked": "0",
+  "childBankLocked": "0",
+  "childWithdrawable": "0",
+  "childPrincipal": "0",
+  "childPayer": "0x0000000000000000000000000000000000000000",
+  "childFundingPayer": {
+    "funded": false,
+    "reason": "unlinked"
+  },
+  "childLinkage": {
+    "main": "0x0000000000000000000000000000000000000000",
+    "members": [],
+    "linkedAt": "0",
+    "maturesAt": "0",
+    "isChild": false,
+    "isMain": false
+  }
+}
+gas 0xd626748f3a6d0f12cc70b4466babbd7de0f4ea46f60ee1c689e9fbb2ee3f289a success logs: 
+propose 0x58f23bf4cd174e03d1d24b8182e92c2ac073dd82d9b87177c11651598b08165b success logs: 0x64b5c23a9721993f9e827957869afe4d2accf77c0dacff4ed553dc8e50b05bfd
+accept 0x583c47fd8a318f78660573b0d9d7c13dbdd372c48a5ab41238ed2dda7780e30f success logs: 0x263cb68e41f87a4a456d20d0397ecb18283a8ce88087acbf1aaf12d06dc8b3df
+s1_linked {
+  "label": "s1_linked",
+  "mainWallet": "99.7764055",
+  "mainAllowance": "9.7764055",
+  "mainBankUnlocked": "0.2235945",
+  "childWallet": "0",
+  "childBankUnlocked": "0",
+  "childBankLocked": "0",
+  "childWithdrawable": "0",
+  "childPrincipal": "0",
+  "childPayer": "0x0000000000000000000000000000000000000000",
+  "childFundingPayer": {
+    "funded": true,
+    "payer": "0xE488bb2bd58E9C425F525293856FAA529f7b1db3"
+  },
+  "childLinkage": {
+    "main": "0x0000000000000000000000000000000000000000",
+    "members": [],
+    "linkedAt": "1793041137",
+    "maturesAt": "1793044737",
+    "isChild": false,
+    "isMain": false
+  }
+}
+childPlace 0x25c3b1a2f7a294e246cef0c133dbf2d24ff44401d5fd5cc6bec5724c13b86283 success logs: 0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925, 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, MainFundedChild, 0x867d68270dc1eaa26d3fe0638b1fdaf4ddc016f38c5f826a5c4aeb8b555d726b, CollateralLocked, OrderPlaced, OrderRested
+s2_placed {
+  "label": "s2_placed",
+  "mainWallet": "99.553501",
+  "mainAllowance": "9.553501",
+  "mainBankUnlocked": "0.2235945",
+  "childWallet": "0",
+  "childBankUnlocked": "0",
+  "childBankLocked": "0",
+  "childWithdrawable": "0",
+  "childPrincipal": "0.2229045",
+  "childPayer": "0xE488bb2bd58E9C425F525293856FAA529f7b1db3",
+  "childFundingPayer": {
+    "funded": true,
+    "payer": "0xE488bb2bd58E9C425F525293856FAA529f7b1db3"
+  },
+  "childLinkage": {
+    "main": "0x0000000000000000000000000000000000000000",
+    "members": [],
+    "linkedAt": "1793041137",
+    "maturesAt": "1793044737",
+    "isChild": false,
+    "isMain": false
+  }
+}
+childCancel 0xe30176837634a643f500d05909d1b63048e9ee2cebef922e36bf64f0436271af success logs: CollateralUnlocked, OrderCancelled
+s3_cancelled {
+  "label": "s3_cancelled",
+  "mainWallet": "99.553501",
+  "mainAllowance": "9.553501",
+  "mainBankUnlocked": "0.2235945",
+  "childWallet": "0",
+  "childBankUnlocked": "0.2229045",
+  "childBankLocked": "0",
+  "childWithdrawable": "0",
+  "childPrincipal": "0.2229045",
+  "childPayer": "0xE488bb2bd58E9C425F525293856FAA529f7b1db3",
+  "childFundingPayer": {
+    "funded": true,
+    "payer": "0xE488bb2bd58E9C425F525293856FAA529f7b1db3"
+  },
+  "childLinkage": {
+    "main": "0x0000000000000000000000000000000000000000",
+    "members": [],
+    "linkedAt": "1793041137",
+    "maturesAt": "1793044737",
+    "isChild": false,
+    "isMain": false
+  }
+}
+sim {
+  "label": "child withdraw(all unlocked) while principal outstanding",
+  "result": "revert",
+  "reason": "The contract function \"withdraw\" reverted with the following signature:",
+  "expected": "revert",
+  "unexpected": false
+}
+sim {
+  "label": "child withdraw(1 wei) while principal outstanding",
+  "result": "revert",
+  "reason": "The contract function \"withdraw\" reverted with the following signature:",
+  "expected": "revert",
+  "unexpected": false
+}
+sim {
+  "label": "main recallFromChild(child, 1 wei) from a non-payer (the child itself)",
+  "result": "revert",
+  "reason": "The contract function \"recallFromChild\" reverted with the following signature:",
+  "expected": "revert",
+  "unexpected": false
+}
+childRepayHalf 0xc038d5a578eddbe357ac1496807161dd585a1340a259598852f942d0c138b96b success logs: 0x04e2caa918a69c3e0d380a68c40c5db84fc12fec03022820849786ebf5aee368, 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef
+s4_repaidHalf {
+  "label": "s4_repaidHalf",
+  "mainWallet": "99.66495325",
+  "mainAllowance": "9.553501",
+  "mainBankUnlocked": "0.2235945",
+  "childWallet": "0",
+  "childBankUnlocked": "0.11145225",
+  "childBankLocked": "0",
+  "childWithdrawable": "0",
+  "childPrincipal": "0.11145225",
+  "childPayer": "0xE488bb2bd58E9C425F525293856FAA529f7b1db3",
+  "childFundingPayer": {
+    "funded": true,
+    "payer": "0xE488bb2bd58E9C425F525293856FAA529f7b1db3"
+  },
+  "childLinkage": {
+    "main": "0x0000000000000000000000000000000000000000",
+    "members": [],
+    "linkedAt": "1793041137",
+    "maturesAt": "1793044737",
+    "isChild": false,
+    "isMain": false
+  }
+}
+childUnlink 0x61775bbce1d1bc9fc31d654851e1439a97034cc6975cdd708168a721b7ce4e5a success logs: 0xdb2e7acdfdd5270e43a99f07307286e066fccebd3287d5c982ca56530fb49065
+s5_unlinked {
+  "label": "s5_unlinked",
+  "mainWallet": "99.66495325",
+  "mainAllowance": "9.553501",
+  "mainBankUnlocked": "0.2235945",
+  "childWallet": "0",
+  "childBankUnlocked": "0.11145225",
+  "childBankLocked": "0",
+  "childWithdrawable": "0",
+  "childPrincipal": "0.11145225",
+  "childPayer": "0xE488bb2bd58E9C425F525293856FAA529f7b1db3",
+  "childFundingPayer": {
+    "funded": false,
+    "reason": "unlinked"
+  },
+  "childLinkage": {
+    "main": "0x0000000000000000000000000000000000000000",
+    "members": [],
+    "linkedAt": "0",
+    "maturesAt": "0",
+    "isChild": false,
+    "isMain": false
+  }
+}
+sim {
+  "label": "child withdraw(all unlocked) after unlink, principal outstanding",
+  "result": "revert",
+  "reason": "The contract function \"withdraw\" reverted with the following signature:",
+  "expected": "revert",
+  "unexpected": false
+}
+mainRecall 0xe51371cbb5df478e79cc0dc22fbfb6186259b4221c8a83d463da18604f0f35c3 success logs: 0x04e2caa918a69c3e0d380a68c40c5db84fc12fec03022820849786ebf5aee368, 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef
+s6_recalled {
+  "label": "s6_recalled",
+  "mainWallet": "99.7764055",
+  "mainAllowance": "9.553501",
+  "mainBankUnlocked": "0.2235945",
+  "childWallet": "0",
+  "childBankUnlocked": "0.11145225",
+  "childBankLocked": "0",
+  "childWithdrawable": "0",
+  "childPrincipal": "0",
+  "childPayer": "0x0000000000000000000000000000000000000000",
+  "childFundingPayer": {
+    "funded": false,
+    "reason": "unlinked"
+  },
+  "childLinkage": {
+    "main": "0x0000000000000000000000000000000000000000",
+    "members": [],
+    "linkedAt": "0",
+    "maturesAt": "0",
+    "isChild": false,
+    "isMain": false
+  }
+}
+indexer {
+  "linkEvents": [
+    {
+      "id": "0x61775bbce1d1bc9fc31d654851e1439a97034cc6975cdd708168a721b7ce4e5a_20",
+      "kind": "Unlinked",
+      "main": "0xe488bb2bd58e9c425f525293856faa529f7b1db3",
+      "child": "0x7400346f9492cf6ac73c13a3b2d0b864b0f5080d",
+      "timestamp": "1793041153",
+      "blockNumber": "33889865",
+      "logIndex": 20,
+      "txHash": "0x61775bbce1d1bc9fc31d654851e1439a97034cc6975cdd708168a721b7ce4e5a"
+    },
+    {
+      "id": "0x583c47fd8a318f78660573b0d9d7c13dbdd372c48a5ab41238ed2dda7780e30f_0",
+      "kind": "Linked",
+      "main": "0xe488bb2bd58e9c425f525293856faa529f7b1db3",
+      "child": "0x7400346f9492cf6ac73c13a3b2d0b864b0f5080d",
+      "timestamp": "1793041137",
+      "blockNumber": "33889709",
+      "logIndex": 0,
+      "txHash": "0x583c47fd8a318f78660573b0d9d7c13dbdd372c48a5ab41238ed2dda7780e30f"
+    },
+    {
+      "id": "0x58f23bf4cd174e03d1d24b8182e92c2ac073dd82d9b87177c11651598b08165b_18",
+      "kind": "Proposed",
+      "main": "0xe488bb2bd58e9c425f525293856faa529f7b1db3",
+      "child": "0x7400346f9492cf6ac73c13a3b2d0b864b0f5080d",
+      "timestamp": "1793041135",
+      "blockNumber": "33889688",
+      "logIndex": 18,
+      "txHash": "0x58f23bf4cd174e03d1d24b8182e92c2ac073dd82d9b87177c11651598b08165b"
+    }
+  ],
+  "marginPulls": [
+    {
+      "id": "0x25c3b1a2f7a294e246cef0c133dbf2d24ff44401d5fd5cc6bec5724c13b86283_39",
+      "account": "0x7400346f9492cf6ac73c13a3b2d0b864b0f5080d",
+      "pool": "0x7058579f3248559963f79adb937c6de9f953e060",
+      "orderId": "387381625547907027089",
+      "source": "Main",
+      "amount": "222904500000000000",
+      "payer": "0xe488bb2bd58e9c425f525293856faa529f7b1db3",
+      "timestamp": "1793041141",
+      "blockNumber": "33889745",
+      "txHash": "0x25c3b1a2f7a294e246cef0c133dbf2d24ff44401d5fd5cc6bec5724c13b86283"
+    }
+  ],
+  "mainFundingEvents": [
+    {
+      "id": "0xe51371cbb5df478e79cc0dc22fbfb6186259b4221c8a83d463da18604f0f35c3_2",
+      "account": "0x7400346f9492cf6ac73c13a3b2d0b864b0f5080d",
+      "kind": "Returned",
+      "payer": "0xe488bb2bd58e9c425f525293856faa529f7b1db3",
+      "amount": "111452250000000000",
+      "previousPrincipal": null,
+      "outstandingPrincipal": "0",
+      "timestamp": "1793041157",
+      "blockNumber": "33889904",
+      "txHash": "0xe51371cbb5df478e79cc0dc22fbfb6186259b4221c8a83d463da18604f0f35c3"
+    },
+    {
+      "id": "0xc038d5a578eddbe357ac1496807161dd585a1340a259598852f942d0c138b96b_22",
+      "account": "0x7400346f9492cf6ac73c13a3b2d0b864b0f5080d",
+      "kind": "Returned",
+      "payer": "0xe488bb2bd58e9c425f525293856faa529f7b1db3",
+      "amount": "111452250000000000",
+      "previousPrincipal": null,
+      "outstandingPrincipal": "111452250000000000",
+      "timestamp": "1793041149",
+      "blockNumber": "33889823",
+      "txHash": "0xc038d5a578eddbe357ac1496807161dd585a1340a259598852f942d0c138b96b"
+    },
+    {
+      "id": "0x25c3b1a2f7a294e246cef0c133dbf2d24ff44401d5fd5cc6bec5724c13b86283_38",
+      "account": "0x7400346f9492cf6ac73c13a3b2d0b864b0f5080d",
+      "kind": "Funded",
+      "payer": "0xe488bb2bd58e9c425f525293856faa529f7b1db3",
+      "amount": "222904500000000000",
+      "previousPrincipal": null,
+      "outstandingPrincipal": "222904500000000000",
+      "timestamp": "1793041141",
+      "blockNumber": "33889745",
+      "txHash": "0x25c3b1a2f7a294e246cef0c133dbf2d24ff44401d5fd5cc6bec5724c13b86283"
+    }
+  ]
+}

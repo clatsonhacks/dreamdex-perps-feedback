@@ -1,0 +1,23 @@
+{
+  "at": "2026-10-26T17:13:06.932Z",
+  "rows": [
+    {
+      "market": "BTC-PERP",
+      "block": "33826233",
+      "openInterest": "324.99628",
+      "sumLong": "324.99628",
+      "sumShort": "324.99628",
+      "longMinusShort": "0",
+      "oiMinusLong": "0",
+      "holders": {
+        "long": 5789,
+        "short": 355
+      },
+      "flatSlots": 0,
+      "wrongSide": 0,
+      "failed": 0,
+      "odd": [],
+      "ok": true
+    }
+  ]
+}

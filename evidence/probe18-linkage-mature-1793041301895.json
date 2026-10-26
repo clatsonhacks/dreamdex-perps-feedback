@@ -1,0 +1,67 @@
+{
+  "at": "2026-10-26T19:01:39.046Z",
+  "indexerKinds": {
+    "Proposed": 3,
+    "Linked": 3,
+    "Unlinked": 1
+  },
+  "pairs": [
+    {
+      "main": "0x29fd4ddd9793e83fe216c398a2e81bf9cd82fb41",
+      "child": "0xd4ac1ebfcd5446c7bf768c566888cedf40180f8f",
+      "mainOf": "0x29FD4dDD9793e83fe216c398a2e81BF9Cd82FB41",
+      "areLinked": true,
+      "groupSize": 2,
+      "linkageOfChild": {
+        "main": "0x29FD4dDD9793e83fe216c398a2e81BF9Cd82FB41",
+        "members": 2,
+        "linkedAt": "1792688176",
+        "maturesAt": "1792691776",
+        "mature": true
+      },
+      "linkageOfMain": {
+        "main": "0x29FD4dDD9793e83fe216c398a2e81BF9Cd82FB41",
+        "members": 2
+      },
+      "sdkIsChild": true
+    },
+    {
+      "main": "0x93b72eac8f4c06d8adfccd2fa47e1b5a93d5a31e",
+      "child": "0x19e7e376e7c213b7e7e7e46cc70a5dd086daff2a",
+      "mainOf": "0x93B72Eac8f4C06D8ADFCCD2fa47e1b5a93D5A31e",
+      "areLinked": true,
+      "groupSize": 2,
+      "linkageOfChild": {
+        "main": "0x93B72Eac8f4C06D8ADFCCD2fa47e1b5a93D5A31e",
+        "members": 2,
+        "linkedAt": "1792986854",
+        "maturesAt": "1792990454",
+        "mature": true
+      },
+      "linkageOfMain": {
+        "main": "0x93B72Eac8f4C06D8ADFCCD2fa47e1b5a93D5A31e",
+        "members": 2
+      },
+      "sdkIsChild": true
+    },
+    {
+      "main": "0xe488bb2bd58e9c425f525293856faa529f7b1db3",
+      "child": "0x7400346f9492cf6ac73c13a3b2d0b864b0f5080d",
+      "mainOf": "0x0000000000000000000000000000000000000000",
+      "areLinked": false,
+      "groupSize": 0,
+      "linkageOfChild": {
+        "main": "0x0000000000000000000000000000000000000000",
+        "members": 0,
+        "linkedAt": "0",
+        "maturesAt": "0",
+        "mature": false
+      },
+      "linkageOfMain": {
+        "main": "0x0000000000000000000000000000000000000000",
+        "members": 0
+      },
+      "sdkIsChild": false
+    }
+  ]
+}

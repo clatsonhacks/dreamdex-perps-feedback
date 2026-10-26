@@ -1,0 +1,383 @@
+{
+  "at": "2026-10-26T17:09:40.011Z",
+  "rows": [
+    {
+      "market": "ZRO-PERP",
+      "block": "33824163",
+      "openInterest": "12167.2",
+      "sumLong": "12167.2",
+      "sumShort": "12167.2",
+      "longMinusShort": "0",
+      "oiMinusLong": "0",
+      "holders": {
+        "long": 18,
+        "short": 7
+      },
+      "flatSlots": 0,
+      "wrongSide": 0,
+      "failed": 0,
+      "odd": [],
+      "ok": true
+    },
+    {
+      "market": "LIT-PERP",
+      "block": "33824193",
+      "openInterest": "8231.1",
+      "sumLong": "8231.1",
+      "sumShort": "8231.1",
+      "longMinusShort": "0",
+      "oiMinusLong": "0",
+      "holders": {
+        "long": 23,
+        "short": 12
+      },
+      "flatSlots": 0,
+      "wrongSide": 0,
+      "failed": 0,
+      "odd": [],
+      "ok": true
+    },
+    {
+      "market": "VVV-PERP",
+      "block": "33824211",
+      "openInterest": "255.89",
+      "sumLong": "255.89",
+      "sumShort": "255.89",
+      "longMinusShort": "0",
+      "oiMinusLong": "0",
+      "holders": {
+        "long": 7,
+        "short": 6
+      },
+      "flatSlots": 0,
+      "wrongSide": 0,
+      "failed": 0,
+      "odd": [],
+      "ok": true
+    },
+    {
+      "market": "1000PEPE-PERP",
+      "block": "33824234",
+      "openInterest": "1803500",
+      "sumLong": "1803500",
+      "sumShort": "1803500",
+      "longMinusShort": "0",
+      "oiMinusLong": "0",
+      "holders": {
+        "long": 10,
+        "short": 4
+      },
+      "flatSlots": 0,
+      "wrongSide": 0,
+      "failed": 0,
+      "odd": [],
+      "ok": true
+    },
+    {
+      "market": "PUMP-PERP",
+      "block": "33824257",
+      "openInterest": "5754100",
+      "sumLong": "5754100",
+      "sumShort": "5754100",
+      "longMinusShort": "0",
+      "oiMinusLong": "0",
+      "holders": {
+        "long": 16,
+        "short": 7
+      },
+      "flatSlots": 0,
+      "wrongSide": 0,
+      "failed": 0,
+      "odd": [],
+      "ok": true
+    },
+    {
+      "market": "ZEC-PERP",
+      "block": "33824280",
+      "openInterest": "100.666",
+      "sumLong": "100.666",
+      "sumShort": "100.666",
+      "longMinusShort": "0",
+      "oiMinusLong": "0",
+      "holders": {
+        "long": 54,
+        "short": 41
+      },
+      "flatSlots": 0,
+      "wrongSide": 0,
+      "failed": 0,
+      "odd": [],
+      "ok": true
+    },
+    {
+      "market": "TAO-PERP",
+      "block": "33824313",
+      "openInterest": "140.764",
+      "sumLong": "140.764",
+      "sumShort": "140.764",
+      "longMinusShort": "0",
+      "oiMinusLong": "0",
+      "holders": {
+        "long": 101,
+        "short": 134
+      },
+      "flatSlots": 0,
+      "wrongSide": 0,
+      "failed": 0,
+      "odd": [],
+      "ok": true
+    },
+    {
+      "market": "WLD-PERP",
+      "block": "33824364",
+      "openInterest": "215744",
+      "sumLong": "215744",
+      "sumShort": "215744",
+      "longMinusShort": "0",
+      "oiMinusLong": "0",
+      "holders": {
+        "long": 179,
+        "short": 87
+      },
+      "flatSlots": 0,
+      "wrongSide": 0,
+      "failed": 0,
+      "odd": [],
+      "ok": true
+    },
+    {
+      "market": "NEAR-PERP",
+      "block": "33824414",
+      "openInterest": "293045",
+      "sumLong": "293045",
+      "sumShort": "293045",
+      "longMinusShort": "0",
+      "oiMinusLong": "0",
+      "holders": {
+        "long": 187,
+        "short": 127
+      },
+      "flatSlots": 0,
+      "wrongSide": 0,
+      "failed": 0,
+      "odd": [],
+      "ok": true
+    },
+    {
+      "market": "XLM-PERP",
+      "block": "33824432",
+      "openInterest": "187479",
+      "sumLong": "187479",
+      "sumShort": "187479",
+      "longMinusShort": "0",
+      "oiMinusLong": "0",
+      "holders": {
+        "long": 118,
+        "short": 119
+      },
+      "flatSlots": 0,
+      "wrongSide": 0,
+      "failed": 0,
+      "odd": [],
+      "ok": true
+    },
+    {
+      "market": "AVAX-PERP",
+      "block": "33824444",
+      "openInterest": "11569.1",
+      "sumLong": "11569.1",
+      "sumShort": "11569.1",
+      "longMinusShort": "0",
+      "oiMinusLong": "0",
+      "holders": {
+        "long": 130,
+        "short": 123
+      },
+      "flatSlots": 0,
+      "wrongSide": 0,
+      "failed": 0,
+      "odd": [],
+      "ok": true
+    },
+    {
+      "market": "LINK-PERP",
+      "block": "33824482",
+      "openInterest": "5988",
+      "sumLong": "5988",
+      "sumShort": "5988",
+      "longMinusShort": "0",
+      "oiMinusLong": "0",
+      "holders": {
+        "long": 112,
+        "short": 119
+      },
+      "flatSlots": 0,
+      "wrongSide": 0,
+      "failed": 0,
+      "odd": [],
+      "ok": true
+    },
+    {
+      "market": "SUI-PERP",
+      "block": "33824587",
+      "openInterest": "295026",
+      "sumLong": "295026",
+      "sumShort": "295026",
+      "longMinusShort": "0",
+      "oiMinusLong": "0",
+      "holders": {
+        "long": 187,
+        "short": 125
+      },
+      "flatSlots": 0,
+      "wrongSide": 0,
+      "failed": 0,
+      "odd": [],
+      "ok": true
+    },
+    {
+      "market": "ADA-PERP",
+      "block": "33824648",
+      "openInterest": "235489",
+      "sumLong": "235489",
+      "sumShort": "235489",
+      "longMinusShort": "0",
+      "oiMinusLong": "0",
+      "holders": {
+        "long": 118,
+        "short": 103
+      },
+      "flatSlots": 0,
+      "wrongSide": 0,
+      "failed": 0,
+      "odd": [],
+      "ok": true
+    },
+    {
+      "market": "BNB-PERP",
+      "block": "33824685",
+      "openInterest": "272.561",
+      "sumLong": "272.561",
+      "sumShort": "272.561",
+      "longMinusShort": "0",
+      "oiMinusLong": "0",
+      "holders": {
+        "long": 148,
+        "short": 121
+      },
+      "flatSlots": 0,
+      "wrongSide": 0,
+      "failed": 0,
+      "odd": [],
+      "ok": true
+    },
+    {
+      "market": "DOGE-PERP",
+      "block": "33824734",
+      "openInterest": "1583510",
+      "sumLong": "1583510",
+      "sumShort": "1583510",
+      "longMinusShort": "0",
+      "oiMinusLong": "0",
+      "holders": {
+        "long": 150,
+        "short": 154
+      },
+      "flatSlots": 0,
+      "wrongSide": 0,
+      "failed": 0,
+      "odd": [],
+      "ok": true
+    },
+    {
+      "market": "XRP-PERP",
+      "block": "33824788",
+      "openInterest": "918233.8",
+      "sumLong": "918233.8",
+      "sumShort": "918233.8",
+      "longMinusShort": "0",
+      "oiMinusLong": "0",
+      "holders": {
+        "long": 277,
+        "short": 229
+      },
+      "flatSlots": 0,
+      "wrongSide": 0,
+      "failed": 0,
+      "odd": [],
+      "ok": true
+    },
+    {
+      "market": "HYPE-PERP",
+      "block": "33824870",
+      "openInterest": "10566.54",
+      "sumLong": "10566.54",
+      "sumShort": "10566.54",
+      "longMinusShort": "0",
+      "oiMinusLong": "0",
+      "holders": {
+        "long": 266,
+        "short": 147
+      },
+      "flatSlots": 0,
+      "wrongSide": 0,
+      "failed": 0,
+      "odd": [],
+      "ok": true
+    },
+    {
+      "market": "SOL-PERP",
+      "block": "33824936",
+      "openInterest": "22997.78",
+      "sumLong": "22997.78",
+      "sumShort": "22997.78",
+      "longMinusShort": "0",
+      "oiMinusLong": "0",
+      "holders": {
+        "long": 349,
+        "short": 195
+      },
+      "flatSlots": 0,
+      "wrongSide": 0,
+      "failed": 0,
+      "odd": [],
+      "ok": true
+    },
+    {
+      "market": "ETH-PERP",
+      "block": "33825130",
+      "openInterest": "693.9774",
+      "sumLong": "693.9774",
+      "sumShort": "693.9774",
+      "longMinusShort": "0",
+      "oiMinusLong": "0",
+      "holders": {
+        "long": 316,
+        "short": 170
+      },
+      "flatSlots": 0,
+      "wrongSide": 0,
+      "failed": 0,
+      "odd": [],
+      "ok": true
+    },
+    {
+      "market": "BTC-PERP",
+      "block": "33825151",
+      "openInterest": "324.97179",
+      "sumLong": "1.43063",
+      "sumShort": "324.97179",
+      "longMinusShort": "-323.54116",
+      "oiMinusLong": "323.54116",
+      "holders": {
+        "long": 5788,
+        "short": 356
+      },
+      "flatSlots": 0,
+      "wrongSide": 0,
+      "failed": 5778,
+      "odd": [],
+      "ok": false
+    }
+  ]
+}
