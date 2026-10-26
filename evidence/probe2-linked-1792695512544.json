@@ -1,0 +1,83 @@
+{
+  "at": "2026-10-22T18:58:27.029Z",
+  "registry": "0x5b3C5Bf1F7AdA852e8AA783f6299932E32073aFb",
+  "linkEventCount": 2,
+  "linkKinds": {
+    "Linked": 1,
+    "Proposed": 1
+  },
+  "linkEvents": [
+    {
+      "id": "0xf673499e96d0736c26fb3367d2b7edef7266aab1f8741f1b3d3d3556e5c88bdc_15",
+      "kind": "Linked",
+      "main": "0x29fd4ddd9793e83fe216c398a2e81bf9cd82fb41",
+      "child": "0xd4ac1ebfcd5446c7bf768c566888cedf40180f8f",
+      "timestamp": "1792688176",
+      "blockNumber": "30361545",
+      "logIndex": 15,
+      "txHash": "0xf673499e96d0736c26fb3367d2b7edef7266aab1f8741f1b3d3d3556e5c88bdc"
+    },
+    {
+      "id": "0xd1cf31275fcebed26fe1962dee84352b24f2a9bb4b07cfc3abe694fa42b82099_8",
+      "kind": "Proposed",
+      "main": "0x29fd4ddd9793e83fe216c398a2e81bf9cd82fb41",
+      "child": "0xd4ac1ebfcd5446c7bf768c566888cedf40180f8f",
+      "timestamp": "1792688171",
+      "blockNumber": "30361499",
+      "logIndex": 8,
+      "txHash": "0xd1cf31275fcebed26fe1962dee84352b24f2a9bb4b07cfc3abe694fa42b82099"
+    }
+  ],
+  "pullCount": 149,
+  "pullSources": {
+    "OwnWallet": 149
+  },
+  "mainPulls": [],
+  "fundEvents": [],
+  "linkage": [
+    {
+      "wallet": "0x29FD4dDD9793e83fe216c398a2e81BF9Cd82FB41",
+      "role": "main(per log)",
+      "rawMain": "0x29FD4dDD9793e83fe216c398a2e81BF9Cd82FB41",
+      "members": 2,
+      "lower": {
+        "isChild": true,
+        "isMain": false,
+        "payer": {
+          "funded": false,
+          "reason": "unlinked"
+        }
+      },
+      "checksummed": {
+        "isChild": false,
+        "isMain": true,
+        "payer": {
+          "funded": false,
+          "reason": "isMain"
+        }
+      }
+    },
+    {
+      "wallet": "0xd4Ac1ebfcd5446c7bf768c566888CEdF40180F8f",
+      "role": "child(per log)",
+      "rawMain": "0x29FD4dDD9793e83fe216c398a2e81BF9Cd82FB41",
+      "members": 2,
+      "lower": {
+        "isChild": true,
+        "isMain": false,
+        "payer": {
+          "funded": true,
+          "payer": "0x29FD4dDD9793e83fe216c398a2e81BF9Cd82FB41"
+        }
+      },
+      "checksummed": {
+        "isChild": true,
+        "isMain": false,
+        "payer": {
+          "funded": true,
+          "payer": "0x29FD4dDD9793e83fe216c398a2e81BF9Cd82FB41"
+        }
+      }
+    }
+  ]
+}

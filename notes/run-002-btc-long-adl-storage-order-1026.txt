@@ -1,0 +1,56 @@
+{
+  "at": "2026-10-26T16:54:38.057Z",
+  "block": "33814912",
+  "engine": "0xA66d3C24Ad4a389d863846905D8173e1017e9F4D",
+  "ranker": "0x3d7466A217e375635386d3c5da30a82959DdB789",
+  "scanCap": "500",
+  "largestSides": [
+    {
+      "market": "BTC-PERP",
+      "side": "long",
+      "pool": "0x4181dd08e73bbcdd1ba3e615a18f6abd941b94c0",
+      "holders": "5785",
+      "overScanCap": true
+    },
+    {
+      "market": "BTC-PERP",
+      "side": "short",
+      "pool": "0x4181dd08e73bbcdd1ba3e615a18f6abd941b94c0",
+      "holders": "357",
+      "overScanCap": false
+    },
+    {
+      "market": "SOL-PERP",
+      "side": "long",
+      "pool": "0xb483ec1fb34996638677c20ab087b16f1896fa53",
+      "holders": "346",
+      "overScanCap": false
+    },
+    {
+      "market": "ETH-PERP",
+      "side": "long",
+      "pool": "0xd6cb1dd58580b84d76068ac21594219ce03aeddf",
+      "holders": "315",
+      "overScanCap": false
+    },
+    {
+      "market": "XRP-PERP",
+      "side": "long",
+      "pool": "0x7058579f3248559963f79adb937c6de9f953e060",
+      "holders": "280",
+      "overScanCap": false
+    },
+    {
+      "market": "HYPE-PERP",
+      "side": "long",
+      "pool": "0x63b47ed4a7de0fde659b0d82441dd74828b7297a",
+      "holders": "267",
+      "overScanCap": false
+    }
+  ],
+  "sdkQueueForLargestSide": {
+    "regime": "storageOrder",
+    "block": "33815134"
+  }
+}
+FAIL: BTC-PERP long (5785 holders > cap 500) — ADL there is not profit/equity ranked

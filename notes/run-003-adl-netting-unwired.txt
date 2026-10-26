@@ -1,0 +1,22 @@
+{
+  "at": "2026-10-22T19:28:06.726Z",
+  "block": "30452572",
+  "liquidationEngine": "0xA66d3C24Ad4a389d863846905D8173e1017e9F4D",
+  "fullyWired": true,
+  "bankRegistry": "0x5b3C5Bf1F7AdA852e8AA783f6299932E32073aFb",
+  "engineRegistry": "0x0000000000000000000000000000000000000000",
+  "maxChildren": "12",
+  "linkedRows": [
+    {
+      "id": "0xf673499e96d0736c26fb3367d2b7edef7266aab1f8741f1b3d3d3556e5c88bdc_15",
+      "kind": "Linked",
+      "main": "0x29fd4ddd9793e83fe216c398a2e81bf9cd82fb41",
+      "child": "0xd4ac1ebfcd5446c7bf768c566888cedf40180f8f",
+      "timestamp": "1792688176",
+      "blockNumber": "30361545",
+      "logIndex": 15,
+      "txHash": "0xf673499e96d0736c26fb3367d2b7edef7266aab1f8741f1b3d3d3556e5c88bdc"
+    }
+  ]
+}
+FAIL: funding rail armed on the bank, ADL netting unwired on the engine (fullyWired still true)

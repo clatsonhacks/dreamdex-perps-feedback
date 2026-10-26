@@ -1,0 +1,236 @@
+{
+  "source": "probe1-1792695391618.json",
+  "rows": [
+    {
+      "base": "ZRO",
+      "dec": 18,
+      "oi": "13090.6",
+      "maxOI": "1002398",
+      "oiOverCap": false,
+      "maxPos": "25059.9",
+      "largestHolder": "11446.4",
+      "holdersChecked": 32,
+      "holdersOverPosCap": 0
+    },
+    {
+      "base": "LIT",
+      "dec": 18,
+      "oi": "4088.7",
+      "maxOI": "555586.4",
+      "oiOverCap": false,
+      "maxPos": "13889.6",
+      "largestHolder": "1534.8",
+      "holdersChecked": 23,
+      "holdersOverPosCap": 0
+    },
+    {
+      "base": "VVV",
+      "dec": 18,
+      "oi": "282.56",
+      "maxOI": "87144.56",
+      "oiOverCap": false,
+      "maxPos": "2178.61",
+      "largestHolder": "182.85",
+      "holdersChecked": 13,
+      "holdersOverPosCap": 0
+    },
+    {
+      "base": "1000PEPE",
+      "dec": 18,
+      "oi": "1338300",
+      "maxOI": "521142400",
+      "oiOverCap": false,
+      "maxPos": "13028500",
+      "largestHolder": "1361400",
+      "holdersChecked": 12,
+      "holdersOverPosCap": 0
+    },
+    {
+      "base": "PUMP",
+      "dec": 6,
+      "oi": "2399800",
+      "maxOI": "351974800",
+      "oiOverCap": false,
+      "maxPos": "8799300",
+      "largestHolder": "1402100",
+      "holdersChecked": 17,
+      "holdersOverPosCap": 0
+    },
+    {
+      "base": "ZEC",
+      "dec": 8,
+      "oi": "62.203",
+      "maxOI": "1680",
+      "oiOverCap": false,
+      "maxPos": "420",
+      "largestHolder": "41.744",
+      "holdersChecked": 60,
+      "holdersOverPosCap": 0
+    },
+    {
+      "base": "TAO",
+      "dec": 9,
+      "oi": "105.184",
+      "maxOI": "2185.491",
+      "oiOverCap": false,
+      "maxPos": "218.549",
+      "largestHolder": "49.654",
+      "holdersChecked": 243,
+      "holdersOverPosCap": 0
+    },
+    {
+      "base": "WLD",
+      "dec": 18,
+      "oi": "218591",
+      "maxOI": "5056000",
+      "oiOverCap": false,
+      "maxPos": "126400",
+      "largestHolder": "84808",
+      "holdersChecked": 287,
+      "holdersOverPosCap": 0
+    },
+    {
+      "base": "NEAR",
+      "dec": 24,
+      "oi": "214125.1",
+      "maxOI": "1001640",
+      "oiOverCap": false,
+      "maxPos": "50000",
+      "largestHolder": "17552.2",
+      "holdersChecked": 328,
+      "holdersOverPosCap": 0
+    },
+    {
+      "base": "XLM",
+      "dec": 7,
+      "oi": "221340",
+      "maxOI": "10711120",
+      "oiOverCap": false,
+      "maxPos": "535556",
+      "largestHolder": "117041",
+      "holdersChecked": 243,
+      "holdersOverPosCap": 0
+    },
+    {
+      "base": "AVAX",
+      "dec": 18,
+      "oi": "7339.9",
+      "maxOI": "266688.8",
+      "oiOverCap": false,
+      "maxPos": "13334.4",
+      "largestHolder": "2368.6",
+      "holdersChecked": 266,
+      "holdersOverPosCap": 0
+    },
+    {
+      "base": "LINK",
+      "dec": 18,
+      "oi": "3522.3",
+      "maxOI": "170574.4",
+      "oiOverCap": false,
+      "maxPos": "8528.6",
+      "largestHolder": "1307.9",
+      "holdersChecked": 232,
+      "holdersOverPosCap": 0
+    },
+    {
+      "base": "SUI",
+      "dec": 9,
+      "oi": "284389",
+      "maxOI": "2540036",
+      "oiOverCap": false,
+      "maxPos": "127000",
+      "largestHolder": "57190",
+      "holdersChecked": 304,
+      "holdersOverPosCap": 0
+    },
+    {
+      "base": "ADA",
+      "dec": 6,
+      "oi": "115264",
+      "maxOI": "9018712",
+      "oiOverCap": false,
+      "maxPos": "450934",
+      "largestHolder": "39603",
+      "holdersChecked": 225,
+      "holdersOverPosCap": 0
+    },
+    {
+      "base": "BNB",
+      "dec": 18,
+      "oi": "223.887",
+      "maxOI": "2775.9",
+      "oiOverCap": false,
+      "maxPos": "140",
+      "largestHolder": "63.436",
+      "holdersChecked": 262,
+      "holdersOverPosCap": 0
+    },
+    {
+      "base": "DOGE",
+      "dec": 8,
+      "oi": "1891640",
+      "maxOI": "22454360",
+      "oiOverCap": false,
+      "maxPos": "1122700",
+      "largestHolder": "659590",
+      "holdersChecked": 305,
+      "holdersOverPosCap": 0
+    },
+    {
+      "base": "XRP",
+      "dec": 6,
+      "oi": "781329.7",
+      "maxOI": "1378528",
+      "oiOverCap": false,
+      "maxPos": "68926.4",
+      "largestHolder": "68347.8",
+      "holdersChecked": 452,
+      "holdersOverPosCap": 0
+    },
+    {
+      "base": "HYPE",
+      "dec": 6,
+      "oi": "18067.71",
+      "maxOI": "47625.44",
+      "oiOverCap": false,
+      "maxPos": "2381.27",
+      "largestHolder": "1646.39",
+      "holdersChecked": 427,
+      "holdersOverPosCap": 0
+    },
+    {
+      "base": "SOL",
+      "dec": 9,
+      "oi": "26302.25",
+      "maxOI": "95308.88",
+      "oiOverCap": false,
+      "maxPos": "4765.44",
+      "largestHolder": "4527.13",
+      "holdersChecked": 570,
+      "holdersOverPosCap": 0
+    },
+    {
+      "base": "ETH",
+      "dec": 18,
+      "oi": "729.8585",
+      "maxOI": "7991.225",
+      "oiOverCap": false,
+      "maxPos": "399.5612",
+      "largestHolder": "57.6901",
+      "holdersChecked": 476,
+      "holdersOverPosCap": 0
+    },
+    {
+      "base": "BTC",
+      "dec": 8,
+      "oi": "320.2291",
+      "maxOI": "493.6309",
+      "oiOverCap": false,
+      "maxPos": "100",
+      "largestHolder": "99.68561",
+      "holdersChecked": 299,
+      "holdersOverPosCap": 0
+    }
+  ]
+}

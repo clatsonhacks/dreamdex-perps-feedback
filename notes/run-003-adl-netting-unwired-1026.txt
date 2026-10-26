@@ -1,0 +1,32 @@
+{
+  "at": "2026-10-26T16:54:56.445Z",
+  "block": "33815288",
+  "liquidationEngine": "0xA66d3C24Ad4a389d863846905D8173e1017e9F4D",
+  "fullyWired": true,
+  "bankRegistry": "0x5b3C5Bf1F7AdA852e8AA783f6299932E32073aFb",
+  "engineRegistry": "0x0000000000000000000000000000000000000000",
+  "maxChildren": "12",
+  "linkedRows": [
+    {
+      "id": "0x23f353831dfdfd0b7ed9b5fb7cf7b9054d561d6e364a5ec86bf30098cb3821c3_3",
+      "kind": "Linked",
+      "main": "0x93b72eac8f4c06d8adfccd2fa47e1b5a93d5a31e",
+      "child": "0x19e7e376e7c213b7e7e7e46cc70a5dd086daff2a",
+      "timestamp": "1792986854",
+      "blockNumber": "33347096",
+      "logIndex": 3,
+      "txHash": "0x23f353831dfdfd0b7ed9b5fb7cf7b9054d561d6e364a5ec86bf30098cb3821c3"
+    },
+    {
+      "id": "0xf673499e96d0736c26fb3367d2b7edef7266aab1f8741f1b3d3d3556e5c88bdc_15",
+      "kind": "Linked",
+      "main": "0x29fd4ddd9793e83fe216c398a2e81bf9cd82fb41",
+      "child": "0xd4ac1ebfcd5446c7bf768c566888cedf40180f8f",
+      "timestamp": "1792688176",
+      "blockNumber": "30361545",
+      "logIndex": 15,
+      "txHash": "0xf673499e96d0736c26fb3367d2b7edef7266aab1f8741f1b3d3d3556e5c88bdc"
+    }
+  ]
+}
+FAIL: funding rail armed on the bank, ADL netting unwired on the engine (fullyWired still true)

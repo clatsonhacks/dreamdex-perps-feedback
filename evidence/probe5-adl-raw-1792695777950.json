@@ -1,0 +1,262 @@
+{
+  "at": "2026-10-22T19:02:45.716Z",
+  "block": "30437386",
+  "marginBank_getLinkedWalletRegistry": "0x5b3C5Bf1F7AdA852e8AA783f6299932E32073aFb",
+  "engine_getLinkedWalletRegistry": "0x0000000000000000000000000000000000000000",
+  "engine_getAdlRanker": "0x3d7466A217e375635386d3c5da30a82959DdB789",
+  "engine_getMaxAdlScanPerCall": "500",
+  "sides": [
+    {
+      "base": "ZRO",
+      "isLong": true,
+      "holders": "21",
+      "overScanCap": false
+    },
+    {
+      "base": "ZRO",
+      "isLong": false,
+      "holders": "11",
+      "overScanCap": false
+    },
+    {
+      "base": "LIT",
+      "isLong": true,
+      "holders": "12",
+      "overScanCap": false
+    },
+    {
+      "base": "LIT",
+      "isLong": false,
+      "holders": "11",
+      "overScanCap": false
+    },
+    {
+      "base": "VVV",
+      "isLong": true,
+      "holders": "6",
+      "overScanCap": false
+    },
+    {
+      "base": "VVV",
+      "isLong": false,
+      "holders": "7",
+      "overScanCap": false
+    },
+    {
+      "base": "1000PEPE",
+      "isLong": true,
+      "holders": "9",
+      "overScanCap": false
+    },
+    {
+      "base": "1000PEPE",
+      "isLong": false,
+      "holders": "3",
+      "overScanCap": false
+    },
+    {
+      "base": "PUMP",
+      "isLong": true,
+      "holders": "11",
+      "overScanCap": false
+    },
+    {
+      "base": "PUMP",
+      "isLong": false,
+      "holders": "6",
+      "overScanCap": false
+    },
+    {
+      "base": "ZEC",
+      "isLong": true,
+      "holders": "17",
+      "overScanCap": false
+    },
+    {
+      "base": "ZEC",
+      "isLong": false,
+      "holders": "43",
+      "overScanCap": false
+    },
+    {
+      "base": "TAO",
+      "isLong": true,
+      "holders": "109",
+      "overScanCap": false
+    },
+    {
+      "base": "TAO",
+      "isLong": false,
+      "holders": "134",
+      "overScanCap": false
+    },
+    {
+      "base": "WLD",
+      "isLong": true,
+      "holders": "183",
+      "overScanCap": false
+    },
+    {
+      "base": "WLD",
+      "isLong": false,
+      "holders": "104",
+      "overScanCap": false
+    },
+    {
+      "base": "NEAR",
+      "isLong": true,
+      "holders": "172",
+      "overScanCap": false
+    },
+    {
+      "base": "NEAR",
+      "isLong": false,
+      "holders": "155",
+      "overScanCap": false
+    },
+    {
+      "base": "XLM",
+      "isLong": true,
+      "holders": "124",
+      "overScanCap": false
+    },
+    {
+      "base": "XLM",
+      "isLong": false,
+      "holders": "119",
+      "overScanCap": false
+    },
+    {
+      "base": "AVAX",
+      "isLong": true,
+      "holders": "141",
+      "overScanCap": false
+    },
+    {
+      "base": "AVAX",
+      "isLong": false,
+      "holders": "125",
+      "overScanCap": false
+    },
+    {
+      "base": "LINK",
+      "isLong": true,
+      "holders": "118",
+      "overScanCap": false
+    },
+    {
+      "base": "LINK",
+      "isLong": false,
+      "holders": "114",
+      "overScanCap": false
+    },
+    {
+      "base": "SUI",
+      "isLong": true,
+      "holders": "181",
+      "overScanCap": false
+    },
+    {
+      "base": "SUI",
+      "isLong": false,
+      "holders": "123",
+      "overScanCap": false
+    },
+    {
+      "base": "ADA",
+      "isLong": true,
+      "holders": "120",
+      "overScanCap": false
+    },
+    {
+      "base": "ADA",
+      "isLong": false,
+      "holders": "105",
+      "overScanCap": false
+    },
+    {
+      "base": "BNB",
+      "isLong": true,
+      "holders": "143",
+      "overScanCap": false
+    },
+    {
+      "base": "BNB",
+      "isLong": false,
+      "holders": "121",
+      "overScanCap": false
+    },
+    {
+      "base": "DOGE",
+      "isLong": true,
+      "holders": "152",
+      "overScanCap": false
+    },
+    {
+      "base": "DOGE",
+      "isLong": false,
+      "holders": "153",
+      "overScanCap": false
+    },
+    {
+      "base": "XRP",
+      "isLong": true,
+      "holders": "244",
+      "overScanCap": false
+    },
+    {
+      "base": "XRP",
+      "isLong": false,
+      "holders": "209",
+      "overScanCap": false
+    },
+    {
+      "base": "HYPE",
+      "isLong": true,
+      "holders": "258",
+      "overScanCap": false
+    },
+    {
+      "base": "HYPE",
+      "isLong": false,
+      "holders": "168",
+      "overScanCap": false
+    },
+    {
+      "base": "SOL",
+      "isLong": true,
+      "holders": "316",
+      "overScanCap": false
+    },
+    {
+      "base": "SOL",
+      "isLong": false,
+      "holders": "251",
+      "overScanCap": false
+    },
+    {
+      "base": "ETH",
+      "isLong": true,
+      "holders": "269",
+      "overScanCap": false
+    },
+    {
+      "base": "ETH",
+      "isLong": false,
+      "holders": "207",
+      "overScanCap": false
+    },
+    {
+      "base": "BTC",
+      "isLong": true,
+      "holders": "5628",
+      "overScanCap": true
+    },
+    {
+      "base": "BTC",
+      "isLong": false,
+      "holders": "298",
+      "overScanCap": false
+    }
+  ]
+}
