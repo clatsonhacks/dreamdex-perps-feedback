@@ -2,7 +2,7 @@
 Severity: major
 Area: contracts
 
-**Reported:** sent privately to security@dreamdex.io on 2026-10-23. On 2026-10-29 the team replied that it is a product/documentation issue for the Feedback track, and asked for it to be filed here. Numbers below are re-checked on 2026-10-29.
+**Reported:** sent privately to security@dreamdex.io on 2026-10-23. The team replied that it is a product/documentation issue for the Feedback track and asked for it to be filed here; published here 2026-10-28 19:10 UTC (commit `e9cd6a9`). Numbers below re-checked 2026-10-28 (UTC).
 
 **Map cells:** S13/C, S10/C, S11/A
 

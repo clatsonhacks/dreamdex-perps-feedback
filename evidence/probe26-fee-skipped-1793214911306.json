@@ -1,0 +1,1428 @@
+{
+  "summary": {
+    "rows": 82,
+    "mismatch": 0,
+    "reasons": {
+      "7": {
+        "n": 78,
+        "skippedFeeUSDso": "0"
+      },
+      "8": {
+        "n": 4,
+        "skippedFeeUSDso": "2.395643262352665359"
+      }
+    },
+    "totalSkippedFeeUSDso": "2.395643262352665359",
+    "indexerAmountsAllZero": true,
+    "stageEventValuesInTheseTxs": {
+      "1": 52,
+      "2": 13,
+      "3": 6,
+      "4": 11,
+      "5": 3,
+      "7": 1,
+      "8": 1,
+      "9": 1,
+      "10": 1,
+      "14": 1
+    },
+    "first": "1791472296",
+    "last": "1793192107"
+  },
+  "rows": [
+    {
+      "id": "0x519cae1e6a235d5bb544174eb7e177163450ad858a1bd03189d6a475da08d62d_21",
+      "ts": "1791472296",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "16637400000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "16637400000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0x7e630dfe920977e39f72f3071040cc30083c86010daafbcbc220e40123fb3d4d_9",
+      "ts": "1791472418",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "174329508000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "174329508000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0x7a3e55ac06ada350cb58ccca58de39fd3fa88c3421d2d7db2768e034f23bd771_62",
+      "ts": "1791472418",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "15330600000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "15330600000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0x3883d7ec8374d4e2436f399aca5cba7e0f3d55d72c29f1162214c396693138d4_12",
+      "ts": "1791472906",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "16413800000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "16413800000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0x3883d7ec8374d4e2436f399aca5cba7e0f3d55d72c29f1162214c396693138d4_45",
+      "ts": "1791472906",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "15208200000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "15208200000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0x829f0e6bead31800094a5e600acd61697794e8310ad5372387fa38b42ec73d98_10",
+      "ts": "1791473028",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "15481620000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "15481620000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0x1f6622e7f507b7cadc1f2094069432debc6afc6ea1aaa4bc75c1fa905aa4483b_13",
+      "ts": "1792012880",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "7300742610000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "7300742610000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0x143be2fbb858104f96ed819fd93a625b879640dab8f800389285aefb4d29a124_15",
+      "ts": "1792016710",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "44541900000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "44541900000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0x2da4726a256305650e4267e1105ea4e6aea01141105501d87aec78aaac97279e_35",
+      "ts": "1792030614",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "812443800000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "812443800000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0x905f37c6fa37b08b7304c8a5d6331c7b3fa399a73d7fdfc0b3519beb131e0822_78",
+      "ts": "1792031070",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "4136267940000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "4136267940000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0xe63e60a929ac3ba110f1263f9aebab074a7d8a625bf08d1763c2c747cc9363b0_126",
+      "ts": "1792031105",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "18536400000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "18536400000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0x390a0389efef0dff26932de472a6259a70056a2eaa103badc76fab154f4372bf_184",
+      "ts": "1792031823",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "60253200000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "60253200000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0x5335258899afc06fe0793678aa78f6d5b8611e134323e375e98d6d8665dc0928_12",
+      "ts": "1792031823",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "40147800000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "40147800000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0x3ea345433a8af230e4a74efe1a08efff27ac2af4fee15e4672e2b3783352779b_73",
+      "ts": "1792031824",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "47845401000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "47845401000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0x83f558b8d1ec48da6c89c296ed3e78e1456644f62cc2c66a035cee257451989c_32",
+      "ts": "1792035092",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "856771200000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "856771200000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0x3c89300d9789faad837ab8a51083536aa14588f7cb2cc266fb1519a2966235a8_156",
+      "ts": "1792044159",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "4404092000000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "4404092000000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0xe56ae24692e4235aabfb9025211924f2ec7e756bc55881a786bace342a26382d_33",
+      "ts": "1792047377",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "3031531729000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "3031531729000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0xbf6945a28ae281af867c3c9b151ae89d6cbb6d9c2c30aedbcf108a18a0ba6f30_12",
+      "ts": "1792049226",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "17242236000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "17242236000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0x67a85a01c46438cc203d52e71558e7e698db227ad98327738de1c7364afef828_17",
+      "ts": "1792050941",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "7806968255000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "7806968255000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0xda761b1f959f08310ced7849db06d3cf31ecf671e1c6ab1c7d9b5955dd2162f5_22",
+      "ts": "1792050941",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "4375793566000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "4375793566000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0x14f2898761ecdb37c6d651ac96ce1bb0cb7d63faa9e0a0b27c4ae9479db2461d_24",
+      "ts": "1792050950",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "6619421951000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "6619421951000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0x3828712cac36a1366a763809492565a7d4fcb005735e309d483fe6123c686411_26",
+      "ts": "1792057630",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "3314196900000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "3314196900000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0x966f74971b29bd3d29f0bf1947f410c23695acf24867df3e386957b2bf9c70a9_28",
+      "ts": "1792057636",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "3901258981000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "3901258981000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0x5ee6ffc1a898a4cc29532e34d608449c265395a2a33123f796b736183a9aae07_18",
+      "ts": "1792072492",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "1046266503000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "1046266503000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0xe3f1af26f3f0a69a074723ebee532e6771787d79ad998ef3d56d7ec603039113_27",
+      "ts": "1792093468",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "5633497910000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "5633497910000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0x13091a030f76384e2bc3938322301609d20a2767e83c77ec5c4d30f8cc7128fa_18",
+      "ts": "1792093468",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "7013373460000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "7013373460000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0xcb52f1245c797e5aa171028dfd2796dd5b1b53286f8c9fd15117c3be7c62865b_33",
+      "ts": "1792256747",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "4834917100000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "4834917100000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0xd207cbcfb5b85c90d690bb1a60a15351f81110130423f4fdf5b8c237788ecd09_22",
+      "ts": "1792352781",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "4788310800000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "4788310800000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0x7253f9f4af1974b0f23f276674e6abe81981cc2cf7d143736d67551b9aa59bc4_52",
+      "ts": "1792352781",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "17928300000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "17928300000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0x919a29970305a1f794d95ed1ceb2dfc66255b0ca515183bc0debd3b6c7d53a65_77",
+      "ts": "1792491127",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "1581349520000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "1581349520000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0x5656a7004600c868e6d874f0549171c95f4d1bcc3ef29ad8a469711c27658e96_87",
+      "ts": "1792505326",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "3173949700000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "3173949700000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0x132471f6b7f3427c5c0c237c5666afe4d79192d599964a4ea32ca0732651b981_44",
+      "ts": "1792505482",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "4345424800000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "4345424800000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0x7757e5feed6639a22c4d6337d46c7469f231442623599e2caa9d75daa8dbf41c_54",
+      "ts": "1792505527",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "2552071500000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "2552071500000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0xb7c5abea0257bf25b00555e8ace42dc5fbde2a203b3c0282240fc82aa9127cb1_100",
+      "ts": "1792505704",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "5455987570000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "5455987570000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0x5329c4f124fcf4bec59d303ca6ab898da5b5df83a511f19a5b2d12ed1b8d253e_9",
+      "ts": "1792505713",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "6516650000000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "6516650000000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0x6ae6179fe58111086e3147ded82469be983dabf82a43b51c76a6e11203a8a2b7_125",
+      "ts": "1792507022",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "2433603380000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "2433603380000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0xa38ec21abcbb7cb70a42e5f8a586f897fb67688e24307197869c3362022fad2c_25",
+      "ts": "1792507023",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "11542849840000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "11542849840000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0xafe9f830f6b6cccedf35578e1bed49c8bac904e08ff974e3bfef501b18e60aed_11",
+      "ts": "1792508122",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "100061020000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "100061020000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0x0ee06c0c85a871bf47359baa9880d0f4b974c2013abc00be23bd584a3054792a_15",
+      "ts": "1792508125",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "114009380000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "114009380000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0x76f1e8cabe32d2786d2f334baf18fc225e82a3641ffb857a10c8ff7e55c8daff_65",
+      "ts": "1792508135",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "3106468820000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "3106468820000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0x317e543230ad78d12adcaf82903381820f6d12dc2904c37b869c68dbc876850c_39",
+      "ts": "1792508144",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "3122443540000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "3122443540000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0x8c7446bc4d22e4627dce74d25977cc845d7a9e795e53c91b74e5aaaab35abffa_99",
+      "ts": "1792508200",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "2102860960000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "2102860960000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0x7c4ed42fd1de8e747b808d49cb1877fb3ebd38426ca3a56504e53a4242abede3_144",
+      "ts": "1792508219",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "99986200000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "99986200000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0x757890606be35505bf4e287c6d992379f165cc42220f69aa1e6f6598b06bab17_18",
+      "ts": "1792508219",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "99851820000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "99851820000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0xf2c5fb7228257682488d80160f7f6099abb87020bdd75f62fb035c8a8f7691c2_111",
+      "ts": "1792508226",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "100015940000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "100015940000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0xa7dbee983a60efcec6a34e70feb20af5e36131d4a0162e563546f1b15864dba9_112",
+      "ts": "1792508231",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "3005769850000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "3005769850000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0x48b223de1cafc24645eb5d40ca93d03bb1838959f089be9bb1659df934f5cee6_109",
+      "ts": "1792508235",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "3120705570000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "3120705570000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0xe8767b7b0eff85f9a0497ae7626e7879dd26ebe69fe3e01bbec420d2c887ad3b_61",
+      "ts": "1792567367",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "8008189160000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "8008189160000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0x9e6bd62a069005f1f6d4292193927cd68271637e81c34e7aa3d87899f10e1844_59",
+      "ts": "1792575251",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "5285726320000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "5285726320000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0x93d9cd75469f1182ebf02a9000bd1a480f791c92609a530f28a4876b8e4432c6_19",
+      "ts": "1792592793",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "325045664000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "325045664000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0x472817810bf4225f54ee9cba9f73c4239820cc80afd1491fe99dc46ec4b0cf50_111",
+      "ts": "1792593808",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "4565920320000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "4565920320000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0x4b3659e5b637c2e3e5ccc48c592234f82517dbec27888c2c184a184692306117_27",
+      "ts": "1792594104",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "414571680000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "414571680000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0xbb52cecf6dcf7cffe640ab19fc266e23a4f5c6122c649b205624593d7aa872d1_123",
+      "ts": "1792594105",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "6764090760000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "6764090760000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0xf79f36fbf0e7a287430bb68fe5e0592044e5dfb570f4f418bd9b17b3380b27fe_54",
+      "ts": "1792594105",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "99745530000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "99745530000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0x4ab5a7e657f5ee7fd992aafd049683b692d1f885784f7de182f629708da67382_67",
+      "ts": "1792594108",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "115528140000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "115528140000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0xdfbbf2e529c970eeb5d0be71831fd0e17705d629ba8966fac1f123284c3a2918_69",
+      "ts": "1792594143",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "1052065170000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "1052065170000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0x2bad9f55503788b5d3ed06a1d7f60393d90ccb6c5bdf1a22f6d2fb73ec7fa4de_101",
+      "ts": "1792594143",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "50097630000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "50097630000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0x5b0a8d7debe7f7ec0b35f550cc56d06ed4924a5379c380db2e63874686d25bf1_108",
+      "ts": "1792594144",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "1101821280000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "1101821280000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0x4c1a12047808002cf8197f1af6429f340039fd390905f56affe72de8d538ab53_107",
+      "ts": "1792594219",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "3102762650000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "3102762650000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0xb0c07b2a3cc89f4ae338621540d15ca2442838850d150bb53b59fcf295cac080_24",
+      "ts": "1792594221",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "114557290000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "114557290000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0x15f3c53d12441f7545e4044e238f4f68ac094e591b24514191eb45cd287f2f7c_55",
+      "ts": "1792594227",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "1001225000000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "1001225000000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0x185566b3ff4b1cf124369878064a01d0a0821fe031ab89cb3ba1e9192dcbf993_93",
+      "ts": "1792594229",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "1101252600000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "1101252600000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0x272c17ec5ea03deee548c5ff23d5fe9a12fa017d5f74477d5d036a0e4c27df68_40",
+      "ts": "1792594232",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "1117029880000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "1117029880000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0xfc6d345c7366bde053a8f5067dbe24d903c0be6bf67b0265d95557cf751dc26d_45",
+      "ts": "1792594237",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "1051892970000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "1051892970000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0xf53abb827a617ea7931188c1b7493b145e0029df7273b366abb51194f85f9590_20",
+      "ts": "1792594240",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "114654630000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "114654630000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0x9c379a05105b652d818649e62cfa12d57de96347b2120bec9f9bacfe54c384da_168",
+      "ts": "1792594323",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "5262759370000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "5262759370000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0xcd136c0f21efd25e4fc4c1568241e3284892b3b35f1cd2923882f50ee4fb3d3a_52",
+      "ts": "1792594323",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "6610608000000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "6610608000000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0x92ba0116f8464fe6daee240bdff38f10af34ed3d568f5ebd6043eda5a0188f12_11",
+      "ts": "1792687830",
+      "chain": {
+        "reason": 8,
+        "fillNotional": "14510700000000000000",
+        "fee": "145107000000000000",
+        "feeBpsOfFill": 100
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "14510700000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0x5994388d9b75d691a2741976301e731cf295753bcedea359bec2f53ca53b2178_92",
+      "ts": "1792794820",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "25011789930000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "25011789930000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0x7d5792c91553db180cb5859922d66f6205ed9b2da804cb1c16c7832e3f2ec2af_39",
+      "ts": "1792795856",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "25007306580000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "25007306580000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0x0db6e54f1407736b40ec86d74ff0f7c88b138f8e02da2e8af413d7bdcb29b2ec_242",
+      "ts": "1792802465",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "24979915390000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "24979915390000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0x8904e2fa7056c64df91873b6b93be0e1f6ebdd5c3046def534a2b839919ddd52_39",
+      "ts": "1792851330",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "5392530080000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "5392530080000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0x64733da65bef52dcc53f50c2c48cebe9f0d5285e67f43afbc5784890aad4a19b_162",
+      "ts": "1792851420",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "10384871089000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "10384871089000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0xca796b15a957ce211067c1f60fd0de66f564d1a72b2f1d0c6c2134440d009f3b_114",
+      "ts": "1792854600",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "4720845200000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "4720845200000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0x640be6ec2d4ce8d353c5171334116344b1e367880390d45775e8ff714f265f4e_191",
+      "ts": "1792855548",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "6412134600000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "6412134600000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0x525e9330f483ea1df1f66cf9eaa610de84c61b8e5775e3200525bcab61fc291c_11",
+      "ts": "1792979091",
+      "chain": {
+        "reason": 8,
+        "fillNotional": "102850800000000000000",
+        "fee": "1028508000000000000",
+        "feeBpsOfFill": 100
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "102850800000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0x1534859d79b68995d455cc43bf5eac14bc48d7b862f2527bd5d3a87229363a14_98",
+      "ts": "1793136772",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "3999056860000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "3999056860000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0xe2ee4b7c8e7bb2e227f0f2fcdce0d0e2a25f788b4fa0e04e3444b2b8116e001e_26",
+      "ts": "1793144971",
+      "chain": {
+        "reason": 8,
+        "fillNotional": "13778100000000000000",
+        "fee": "105332262352665359",
+        "feeBpsOfFill": 76.44
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "13778100000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0x61eb0cea9cc77f401dd27006e3a6282032f2a47667d1709b83a9c60f344ad4b0_43",
+      "ts": "1793153790",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "24854375520000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "24854375520000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0x7b7a6ce4a04fcdc4a4d53e39ae0d2c148903c0e506e33e38b8987af40651aaa3_56",
+      "ts": "1793153790",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "1445173280000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "1445173280000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0xd69d27abc8970d82f4da54dea4a1470cad3ff58a954801b890f250b9f0ab8cda_90",
+      "ts": "1793153802",
+      "chain": {
+        "reason": 7,
+        "fillNotional": "133259770000000000000",
+        "fee": "0",
+        "feeBpsOfFill": 0
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "133259770000000000000"
+      },
+      "same": true
+    },
+    {
+      "id": "0xed01fb0d38daaf468e117685e1bca265d201d96ac6588ea67372fd53aa08c3ad_22",
+      "ts": "1793192107",
+      "chain": {
+        "reason": 8,
+        "fillNotional": "111669600000000000000",
+        "fee": "1116696000000000000",
+        "feeBpsOfFill": 100
+      },
+      "indexer": {
+        "amount": "0",
+        "tier": null,
+        "insurancePortion": null,
+        "fillNotional": "111669600000000000000"
+      },
+      "same": true
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "at": "2026-10-28T19:16:29.778Z",
+  "topic0": "0xabddd75762e0d6f38592eb52d5227a748603b3ae167f9f546fd3712d63ce991d",
+  "signatureRecovered": "event LiquidationFeeSkipped(address indexed account, address indexed perpPool, uint8 indexed reason, uint256 fillNotional, uint256 fee)",
+  "sdk": {
+    "eventInAnyEventsAbi": false,
+    "kindMentionedInHistoryTs": false
+  },
+  "indexer": {
+    "rows": 82,
+    "first": "1791472296",
+    "last": "1793192107",
+    "everyAmountZero": true,
+    "rowHasReasonField": false
+  },
+  "onChainByReason": {
+    "7": {
+      "rows": 78,
+      "skippedFeeUSDso": "0"
+    },
+    "8": {
+      "rows": 4,
+      "skippedFeeUSDso": "2.395643262352665359"
+    }
+  },
+  "realFeeSkipped": [
+    {
+      "tx": "0x92ba0116f8464fe6daee240bdff38f10af34ed3d568f5ebd6043eda5a0188f12",
+      "block": "30358089",
+      "onChain": {
+        "reason": 8,
+        "fillNotional": "14.5107",
+        "fee": "0.145107"
+      },
+      "indexerRow": {
+        "kind": "LiquidationFeeSkipped",
+        "amount": "0",
+        "fillNotional": "14.5107",
+        "tier": null,
+        "insurancePortion": null
+      }
+    },
+    {
+      "tx": "0x525e9330f483ea1df1f66cf9eaa610de84c61b8e5775e3200525bcab61fc291c",
+      "block": "33269498",
+      "onChain": {
+        "reason": 8,
+        "fillNotional": "102.8508",
+        "fee": "1.028508"
+      },
+      "indexerRow": {
+        "kind": "LiquidationFeeSkipped",
+        "amount": "0",
+        "fillNotional": "102.8508",
+        "tier": null,
+        "insurancePortion": null
+      }
+    },
+    {
+      "tx": "0xe2ee4b7c8e7bb2e227f0f2fcdce0d0e2a25f788b4fa0e04e3444b2b8116e001e",
+      "block": "34918143",
+      "onChain": {
+        "reason": 8,
+        "fillNotional": "13.7781",
+        "fee": "0.105332262352665359"
+      },
+      "indexerRow": {
+        "kind": "LiquidationFeeSkipped",
+        "amount": "0",
+        "fillNotional": "13.7781",
+        "tier": null,
+        "insurancePortion": null
+      }
+    },
+    {
+      "tx": "0xed01fb0d38daaf468e117685e1bca265d201d96ac6588ea67372fd53aa08c3ad",
+      "block": "35389307",
+      "onChain": {
+        "reason": 8,
+        "fillNotional": "111.6696",
+        "fee": "1.116696"
+      },
+      "indexerRow": {
+        "kind": "LiquidationFeeSkipped",
+        "amount": "0",
+        "fillNotional": "111.6696",
+        "tier": null,
+        "insurancePortion": null
+      }
+    }
+  ]
+}
