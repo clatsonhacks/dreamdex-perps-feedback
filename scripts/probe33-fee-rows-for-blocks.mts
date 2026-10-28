@@ -1,0 +1,20 @@
+// Probe 33: for every LiquidationFeeCharged log in a block range, is there an indexer PerpFeeRecord (kind LiquidationFee) with that id?
+import { writeFileSync } from "node:fs";
+import { createPublicClient, http, decodeEventLog, formatUnits, toEventSelector } from "viem";
+import { chain, RPC, INDEXER, j } from "./client.mts";
+const pc = createPublicClient({ chain, transport: http(RPC) });
+const ev = await import("../node_modules/@somnia-chain/markets-sdk/dist/eventsAbi.js" as any);
+const LE = "0xA66d3C24Ad4a389d863846905D8173e1017e9F4D" as const;
+const feeEv = (ev.liquidationEngineEventsAbi as any[]).find((x) => x.name === "LiquidationFeeCharged");
+const topic = toEventSelector(feeEv);
+const [from, to] = process.argv.slice(2).map(BigInt);
+const logs: any[] = [];
+for (let b = from; b <= to; b += 1000n) logs.push(...(await pc.getLogs({ address: LE, fromBlock: b, toBlock: b + 999n > to ? to : b + 999n } as any)).filter((l: any) => l.topics[0] === topic));
+const ids = logs.map((l) => `${l.transactionHash}_${l.logIndex}`);
+const r = (await (await fetch(INDEXER, { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ query: `query($ids:[String!]){ PerpFeeRecord(where:{id:{_in:$ids}}) { id kind amount timestamp } }`, variables: { ids } }) })).json()) as any;
+const have = new Set(r.data.PerpFeeRecord.map((x: any) => x.id));
+const missing = logs.filter((l) => !have.has(`${l.transactionHash}_${l.logIndex}`)).map((l) => { const d: any = decodeEventLog({ abi: [feeEv], data: l.data, topics: l.topics }).args; return { tx: l.transactionHash, logIndex: l.logIndex, block: l.blockNumber, account: d.account, tier: d.tier, amount: formatUnits(d.amount, 18) }; });
+const out = { range: [from, to], onChain: logs.length, indexed: have.size, missing: missing.length, missingTotal: missing.reduce((t, m) => t + Number(m.amount), 0), rows: missing };
+console.log(j(out));
+writeFileSync(`evidence/probe33-fee-rows-${from}-${to}-${Date.now()}.json`, j(out));
+process.exit(0);

@@ -1,0 +1,64 @@
+{
+  "at": "2026-10-28T19:29:04.858Z",
+  "sdk": {
+    "historyTsSaysWhollyToInsuranceFund": true,
+    "getPerpSystemConfigKeys": [
+      "marginBank",
+      "collateralToken",
+      "perpPoolFactory",
+      "liquidationEngine",
+      "insuranceFund",
+      "feeRecipient",
+      "maxLeverageLimit",
+      "fullyWired"
+    ],
+    "getPerpSystemConfigExposesLiquidationFeeRecipient": false,
+    "errorAbiHasLiquidationFeeRecipientCannotBeInsuranceFund": true
+  },
+  "partA": {
+    "liquidationFeeRows": 1418,
+    "liquidationFeeTotal": "225706.378729210629580422",
+    "oldest": "1790685330",
+    "newest": "1793193626",
+    "insuranceFund": {
+      "address": "0x50826894D47C6D4f3BeA38BFDC7Dc5c5be171b80",
+      "ledgerKinds": {
+        "TierFunded": 10,
+        "TierWithdrawn": 1
+      },
+      "totalTierBalances": "1660000",
+      "bankAccount": "1660000",
+      "tiersEqualTopUpsMinusWithdrawals": true
+    },
+    "liquidationFeeRecipient": {
+      "address": "0x95F23A563EceE5c6F841d762943D2F2FEc742253",
+      "isInsuranceFund": false,
+      "bankAccount": "225768.694146222688033084"
+    }
+  },
+  "partB": {
+    "tx": "0x88b153ace3aaafab447ac2e6e09f7a29e3ac495cb7eae9164b4f6d4ad8e9f168",
+    "block": "35404495",
+    "feeCharged": "289.193296",
+    "keeperReward": "0.07",
+    "recipientDelta": "289.123296",
+    "recipientDeltaEqualsFeeMinusReward": true,
+    "insuranceFundBankDelta": "0",
+    "tiersBefore": [
+      "0",
+      "1050000",
+      "260000",
+      "350000",
+      "0",
+      "0"
+    ],
+    "tiersAfter": [
+      "0",
+      "1050000",
+      "260000",
+      "350000",
+      "0",
+      "0"
+    ]
+  }
+}

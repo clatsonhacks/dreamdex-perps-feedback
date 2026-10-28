@@ -1,0 +1,131 @@
+plan {
+  price: '0.6623',
+  quantity: '69',
+  notional: '45.6987',
+  childOwnDeposit: '1'
+}
+t0_start {
+  "label": "t0_start",
+  "block": "35619614",
+  "childWallet": "0",
+  "mainWallet": "99.7764055",
+  "childUnlocked": "0",
+  "childLocked": "0",
+  "principal": "0",
+  "payer": "0x0000000000000000000000000000000000000000",
+  "bankWithdrawable": "0",
+  "equity": "0"
+}
+propose 0xd754a8943e36bcee5a9d922e7ecdff61d09f9681f758408cfc41d3992b852bac success 0x64b5c23a
+accept 0x6d0b66d8e4474fdc61c86e6eb1ddc895fb707d3ac0d144765daf3eb95d246534 success 0x263cb68e
+mainTransfer1 0x69c28076cf0cf856598ad3d09450fd8f2d251b66dfcc61f22808a3cf4f6f57b9 success 0xddf252ad
+childDeposit1 0xf6ad8fd075f57e052e9e0d4253634df6aa4e8e66f8ca6ea8b3a82edc252a3aa2 success 0xddf252ad, Deposited
+t1_deposited {
+  "label": "t1_deposited",
+  "block": "35619662",
+  "childWallet": "0",
+  "mainWallet": "98.7764055",
+  "childUnlocked": "1",
+  "childLocked": "0",
+  "principal": "0",
+  "payer": "0x0000000000000000000000000000000000000000",
+  "bankWithdrawable": "1",
+  "equity": "1"
+}
+childPlace 0x002b3882cd0224de9d4e03755c633466ce6cc25f92f3693a32e3c0f6380bc911 success 0x8c5be1e5, 0xddf252ad, MainFundedChild, 0x867d6827, CollateralLocked, OrderPlaced, OrderRested
+t2_placed {
+  "label": "t2_placed",
+  "block": "35619662",
+  "childWallet": "0",
+  "mainWallet": "98.7764055",
+  "childUnlocked": "1",
+  "childLocked": "0",
+  "principal": "0",
+  "payer": "0x0000000000000000000000000000000000000000",
+  "bankWithdrawable": "1",
+  "equity": "1"
+}
+childCancel 0x8d7dd7ba52ae5ca3dda559a02d7aa7006ed455387bd85835fce313b4602ae7cb success CollateralUnlocked, OrderCancelled
+t3_cancelled {
+  "label": "t3_cancelled",
+  "block": "35619662",
+  "childWallet": "0",
+  "mainWallet": "98.7764055",
+  "childUnlocked": "1",
+  "childLocked": "0",
+  "principal": "0",
+  "payer": "0x0000000000000000000000000000000000000000",
+  "bankWithdrawable": "1",
+  "equity": "1"
+}
+sim {
+  "label": "withdraw(documented max)",
+  "args": [
+    "1000000000000000000"
+  ],
+  "result": "ok"
+}
+sim {
+  "label": "withdraw(documented max + 1 wei)",
+  "args": [
+    "1000000000000000001"
+  ],
+  "result": "revert",
+  "reason": "0x3a23d825"
+}
+sim {
+  "label": "withdraw(bank getWithdrawableCollateral)",
+  "args": [
+    "1000000000000000000"
+  ],
+  "result": "ok"
+}
+sim {
+  "label": "withdraw(bank getWithdrawableCollateral + 1 wei)",
+  "args": [
+    "1000000000000000001"
+  ],
+  "result": "revert",
+  "reason": "0x3a23d825"
+}
+sim {
+  "label": "withdraw(all unlocked)",
+  "args": [
+    "1000000000000000000"
+  ],
+  "result": "ok"
+}
+boundary {
+  "unlocked": "1",
+  "principal": "0",
+  "documentedWithdrawable": "1",
+  "bankWithdrawable": "1",
+  "sdkWithdrawable": "1"
+}
+mainRecall 0x683ee350e0bc4c67f7d9357b4e556728bba599c774ec63741b72b4aabeeb99f0 success 0x04e2caa9, 0xddf252ad
+t4_recalled {
+  "label": "t4_recalled",
+  "block": "35619713",
+  "childWallet": "0",
+  "mainWallet": "97.491470500000000001",
+  "childUnlocked": "2.284934999999999999",
+  "childLocked": "0",
+  "principal": "1.284934999999999999",
+  "payer": "0xE488bb2bd58E9C425F525293856FAA529f7b1db3",
+  "bankWithdrawable": "1",
+  "equity": "2.284934999999999999"
+}
+childWithdrawOwn 0x55319f4e698a8ccdabfdad52884a41e5ab5dfaa359c9aebaaec380e088b7d8fc success Withdrawn, 0xddf252ad
+childUnlink 0x7f4cfc44d012dcbedb1197e797816b77881db5f900b78b6acc9bd6fcabf20e96 success 0xdb2e7acd
+t5_end {
+  "label": "t5_end",
+  "block": "35619713",
+  "childWallet": "0",
+  "mainWallet": "97.491470500000000001",
+  "childUnlocked": "2.284934999999999999",
+  "childLocked": "0",
+  "principal": "1.284934999999999999",
+  "payer": "0xE488bb2bd58E9C425F525293856FAA529f7b1db3",
+  "bankWithdrawable": "1",
+  "equity": "2.284934999999999999"
+}

@@ -1,0 +1,37 @@
+{
+  "block": "35619688",
+  "unlocked": "2.284935",
+  "locked": "0",
+  "principal": "1.284935",
+  "equity": "2.284935",
+  "getWithdrawableCollateral": "1",
+  "documented": "1"
+}
+{
+  "label": "documented max",
+  "amt": "1",
+  "result": "ok"
+}
+{
+  "label": "documented max + 1 wei",
+  "amt": "1.000000000000000001",
+  "result": "revert",
+  "reason": "0x03426d15"
+}
+{
+  "label": "getWithdrawableCollateral",
+  "amt": "1",
+  "result": "ok"
+}
+{
+  "label": "getWithdrawableCollateral + 1 wei",
+  "amt": "1.000000000000000001",
+  "result": "revert",
+  "reason": "0x03426d15"
+}
+{
+  "label": "all unlocked",
+  "amt": "2.284935",
+  "result": "revert",
+  "reason": "0x03426d15"
+}

@@ -1,23 +1,41 @@
-// Repro 004: liquidation fees are charged to traders and the SDK documents them as routed "WHOLLY
-// to an Insurance Fund tier", but no Insurance Fund tier (nor the fund's MarginBank account) ever
-// receives them. Read-only. Exits 1 while fees > 0 and the fund's balances equal its top-ups.
-// Prints both what was charged in each tier's markets and what the indexer books as insurancePortion.
+// Repro 004: the SDK documents the liquidation fee as routed "WHOLLY to an Insurance Fund tier", but on
+// chain it is paid to MarginBank.getLiquidationFeeRecipient() — a separate address the contract forbids
+// from being the Insurance Fund (error LiquidationFeeRecipientCannotBeInsuranceFund) — and the SDK
+// exposes no way to find that address (getPerpSystemConfig omits it).
+// Read-only. Exits 1 while the SDK text says "Insurance Fund" and the fees reach the recipient instead.
 //
-// Part A (all history): sum of LiquidationFee rows vs the fund's tier ledger replay vs chain.
-// Part B (one tx, optional): pass a fee txHash and the liquidated account to reconcile balances
-//   at block-1 / block:  npx tsx scripts/repro-004-liquidation-fee-not-in-insurance-fund.mts <txHash> <account>
+// Part A (all history): indexed LiquidationFee total vs the Insurance Fund's tier ledger and balances,
+//   and the recipient's MarginBank balance.
+// Part B (one tx, optional): recipient / fund / tier deltas at block-1 → block for a fee tx.
+//   npx tsx scripts/repro-004-liquidation-fee-not-in-insurance-fund.mts <txHash>
 //
 // Run: npx tsx scripts/repro-004-liquidation-fee-not-in-insurance-fund.mts
-import { writeFileSync, mkdirSync } from "node:fs";
-import { createPublicClient, http, formatUnits } from "viem";
+import { writeFileSync, mkdirSync, readFileSync } from "node:fs";
+import { createPublicClient, http, formatUnits, parseAbi, decodeEventLog } from "viem";
 import { chain, client, j, RPC } from "./client.mts";
 
 const pc = createPublicClient({ chain, transport: http(RPC) });
 const R = await import("../node_modules/@somnia-chain/markets-sdk/dist/readsAbi.js" as any);
+const E = await import("../node_modules/@somnia-chain/markets-sdk/dist/contractErrorsAbi.js" as any);
+const ev = await import("../node_modules/@somnia-chain/markets-sdk/dist/eventsAbi.js" as any);
 const BANK = "0x478769E1177C0773c43A593DCCc4Ad15F15F1394" as const;
 const cfg = await client.getPerpSystemConfig(BANK);
 const IF = cfg.insuranceFund as `0x${string}`;
 const fmt = (v: bigint) => formatUnits(v, 18);
+const recipient = (await pc.readContract({ address: BANK, abi: parseAbi(["function getLiquidationFeeRecipient() view returns (address)"]), functionName: "getLiquidationFeeRecipient" })) as `0x${string}`;
+const bankTotal = async (who: string, blockNumber?: bigint) => {
+  const s: any = await pc.readContract({ address: BANK, abi: R.marginBankReadAbi, functionName: "getAccountState", args: [who], blockNumber } as any);
+  return s.unlockedCollateralBalance + s.lockedCollateral;
+};
+
+// ---- SDK claims
+const historySrc = readFileSync(new URL("../node_modules/@somnia-chain/markets-sdk/src/perp/history.ts", import.meta.url), "utf8");
+const sdk = {
+  historyTsSaysWhollyToInsuranceFund: historySrc.includes("routed WHOLLY to an") && historySrc.includes("Insurance Fund tier"),
+  getPerpSystemConfigKeys: Object.keys(cfg),
+  getPerpSystemConfigExposesLiquidationFeeRecipient: Object.values(cfg).some((v) => typeof v === "string" && v.toLowerCase() === recipient.toLowerCase()),
+  errorAbiHasLiquidationFeeRecipientCannotBeInsuranceFund: JSON.stringify(Object.values(E)).includes("LiquidationFeeRecipientCannotBeInsuranceFund"),
+};
 
 // ---- Part A
 const fees: any[] = [];
@@ -27,13 +45,6 @@ for (let offset = 0; ; offset += 500) {
   if (page.length < 500) break;
 }
 const feeTotal = fees.reduce((t, r) => t + BigInt(r.amount), 0n);
-const feeByTier: Record<string, bigint> = {};
-const insurancePortionByTier: Record<string, bigint> = {};
-for (const r of fees) {
-  feeByTier[r.tier] = (feeByTier[r.tier] ?? 0n) + BigInt(r.amount);
-  insurancePortionByTier[r.tier] = (insurancePortionByTier[r.tier] ?? 0n) + BigInt(r.insurancePortion ?? "0");
-}
-
 const ledger: any[] = [];
 for (let offset = 0; ; offset += 500) {
   const page = (await client.listPerpInsuranceFundEvents({ limit: 500, offset })) as any[];
@@ -51,52 +62,38 @@ for (const r of ledger) {
   else if (r.kind === "TierAllocated") { add(r.tier, -a); add(r.toTier, a); }
 }
 const state = await client.getInsuranceFundState(IF);
-const ifAccount = await client.getMarginAccount(BANK, IF);
-const tiers = state.tiers.map((t: any) => ({
-  tier: t.tier, chainBalance: fmt(t.balance), ledgerReplay: fmt(replay[String(t.tier)] ?? 0n),
-  liquidationFeesChargedInTier: fmt(feeByTier[String(t.tier)] ?? 0n),
-  indexedInsurancePortion: fmt(insurancePortionByTier[String(t.tier)] ?? 0n), pools: t.poolCount,
-}));
-const partA = {
-  liquidationFeeRows: fees.length, liquidationFeeTotal: fmt(feeTotal),
-  oldest: fees.at(-1)?.timestamp, newest: fees[0]?.timestamp,
-  insuranceLedgerKinds: kinds, totalTierBalances: fmt(state.totalBalance),
-  insuranceFundBankAccount: fmt(BigInt(ifAccount.unlockedCollateralBalance) + BigInt(ifAccount.lockedCollateral)),
-  tiers,
-};
-console.log(j(partA));
 const chainEqualsTopUps = state.tiers.every((t: any) => t.balance === (replay[String(t.tier)] ?? 0n));
+const partA = {
+  liquidationFeeRows: fees.length, liquidationFeeTotal: fmt(feeTotal), oldest: fees.at(-1)?.timestamp, newest: fees[0]?.timestamp,
+  insuranceFund: { address: IF, ledgerKinds: kinds, totalTierBalances: fmt(state.totalBalance), bankAccount: fmt(await bankTotal(IF)), tiersEqualTopUpsMinusWithdrawals: chainEqualsTopUps },
+  liquidationFeeRecipient: { address: recipient, isInsuranceFund: recipient.toLowerCase() === IF.toLowerCase(), bankAccount: fmt(await bankTotal(recipient)) },
+};
+console.log(j({ sdk, partA }));
 
 // ---- Part B
 let partB: any = null;
-const [tx, account] = process.argv.slice(2) as [`0x${string}`?, `0x${string}`?];
-if (tx && account) {
+const tx = process.argv[2] as `0x${string}` | undefined;
+if (tx) {
   const rc = await pc.getTransactionReceipt({ hash: tx });
   const b = rc.blockNumber;
-  const total = async (who: string, blockNumber: bigint) => {
-    const s: any = await pc.readContract({ address: BANK, abi: R.marginBankReadAbi, functionName: "getAccountState", args: [who], blockNumber });
-    return s.unlockedCollateralBalance + s.lockedCollateral;
-  };
-  const tierAt = async (blockNumber: bigint) => {
-    const out: string[] = [];
-    for (const t of state.tiers) out.push(fmt((await pc.readContract({ address: IF, abi: R.insuranceFundReadAbi, functionName: "getTierBalance", args: [BigInt(t.tier)], blockNumber })) as bigint));
-    return out;
-  };
+  const all = Object.values(ev).filter(Array.isArray).flat() as any[];
+  let fee = 0n, reward = 0n;
+  for (const l of rc.logs) { try { const d: any = decodeEventLog({ abi: all, data: l.data, topics: l.topics as any }); if (d.eventName === "LiquidationFeeCharged") fee += d.args.amount; if (d.eventName === "LiquidationKeeperRewardPaid") reward += d.args.amount; } catch {} }
+  const tierAt = async (blockNumber: bigint) => Promise.all(state.tiers.map(async (t: any) => fmt((await pc.readContract({ address: IF, abi: R.insuranceFundReadAbi, functionName: "getTierBalance", args: [BigInt(t.tier)], blockNumber })) as bigint)));
+  const recDelta = (await bankTotal(recipient, b)) - (await bankTotal(recipient, b - 1n));
   partB = {
-    tx, block: b,
-    feeRow: fees.find((r) => r.txHash === tx) ?? null,
-    accountDelta: fmt((await total(account, b)) - (await total(account, b - 1n))),
-    insuranceFundBankAccountDelta: fmt((await total(IF, b)) - (await total(IF, b - 1n))),
+    tx, block: b, feeCharged: fmt(fee), keeperReward: fmt(reward),
+    recipientDelta: fmt(recDelta), recipientDeltaEqualsFeeMinusReward: recDelta === fee - reward,
+    insuranceFundBankDelta: fmt((await bankTotal(IF, b)) - (await bankTotal(IF, b - 1n))),
     tiersBefore: await tierAt(b - 1n), tiersAfter: await tierAt(b),
   };
-  console.log(j(partB));
+  console.log(j({ partB }));
 }
 
 mkdirSync("evidence", { recursive: true });
-writeFileSync(`evidence/004-liquidation-fee-insurance-${Date.now()}.json`, j({ at: new Date().toISOString(), insuranceFund: IF, partA, partB }));
-
-const bug = feeTotal > 0n && chainEqualsTopUps && !kinds.TierCredited;
+writeFileSync(`evidence/004-liquidation-fee-routing-${Date.now()}.json`, j({ at: new Date().toISOString(), sdk, partA, partB }));
+const bug = sdk.historyTsSaysWhollyToInsuranceFund && feeTotal > 0n && chainEqualsTopUps && !kinds.TierCredited && !partA.liquidationFeeRecipient.isInsuranceFund;
 console.log(bug
-  ? `FAIL: ${fmt(feeTotal)} USDso of liquidation fees (${fees.length} rows) charged in tiered markets; every Insurance Fund tier still equals its top-ups minus withdrawals, and the ledger has no TierCredited row`
+  ? `FAIL: the SDK says liquidation fees go wholly to an Insurance Fund tier, but ${fmt(feeTotal)} USDso of them (${fees.length} rows) went to the liquidation fee recipient ${recipient} (bank balance ${partA.liquidationFeeRecipient.bankAccount}); the fund's tiers still equal their top-ups and getPerpSystemConfig does not expose the recipient: ${!sdk.getPerpSystemConfigExposesLiquidationFeeRecipient}`
   : "PASS");
 process.exit(bug ? 1 : 0);

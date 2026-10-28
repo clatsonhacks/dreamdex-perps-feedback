@@ -1,0 +1,133 @@
+{
+  "AccountOrderChange": {
+    "cancelReason": []
+  },
+  "AccountStopChange": {
+    "cancelReason": []
+  },
+  "CompleteSetAction": {
+    "kind": [
+      "Mint"
+    ]
+  },
+  "FundingParametersEpoch": {
+    "source": [
+      "Genesis"
+    ]
+  },
+  "LendAction": {
+    "kind": []
+  },
+  "LiquidationEvent": {
+    "kind": [
+      "AccountLiquidated",
+      "AdlNoBadDebtToSocialize",
+      "CloseOutMarginSettled",
+      "CoverageDeclined",
+      "KeeperReward",
+      "PositionLiquidated",
+      "PositionTakenOver",
+      "PositionTransferred",
+      "ResidualBackedByOpenPnl",
+      "TakeoverBandClamped"
+    ]
+  },
+  "MarketResolutionEvent": {
+    "kind": [
+      "Resolved"
+    ]
+  },
+  "OperatorOwnershipEvent": {
+    "kind": [
+      "Started",
+      "Transferred"
+    ]
+  },
+  "OutcomeTransfer": {
+    "kind": [
+      "CustodyIn",
+      "CustodyOut",
+      "Wallet"
+    ]
+  },
+  "PerpFeeRecipientChange": {
+    "kind": [
+      "FeeRecipient",
+      "InsuranceFund",
+      "LiquidationFeeRecipient"
+    ],
+    "source": [
+      "0x478769e1177c0773c43a593dccc4ad15f15f1394"
+    ]
+  },
+  "PerpFeeRecord": {
+    "kind": [
+      "LiquidationFee",
+      "LiquidationFeeSkipped"
+    ]
+  },
+  "PerpInsuranceFundEvent": {
+    "kind": [
+      "TierFunded",
+      "TierWithdrawn"
+    ]
+  },
+  "PerpMainFundingEvent": {
+    "kind": [
+      "Funded",
+      "Returned"
+    ]
+  },
+  "PerpMarginPull": {
+    "source": [
+      "Main",
+      "OwnWallet"
+    ]
+  },
+  "PerpMarketLifecycleEvent": {
+    "kind": [
+      "PoolRegistered"
+    ],
+    "status": [
+      null
+    ]
+  },
+  "PerpParameterChange": {
+    "kind": [
+      "InsuranceFundPoolTier",
+      "MaxLeverageLimit",
+      "MaxLiquidationVolumePerBlockForPool",
+      "SettlementFeeBps"
+    ],
+    "source": [
+      "0x478769e1177c0773c43a593dccc4ad15f15f1394",
+      "0x50826894d47c6d4f3bea38bfdc7dc5c5be171b80",
+      "0xa66d3c24ad4a389d863846905d8173e1017e9f4d"
+    ]
+  },
+  "PerpPoolParametersEpoch": {
+    "source": [
+      "Event",
+      "Genesis"
+    ]
+  },
+  "PerpWalletLinkEvent": {
+    "kind": [
+      "Linked",
+      "Proposed",
+      "Unlinked"
+    ]
+  },
+  "RouterActionRecord": {
+    "kind": [
+      "Redeem"
+    ]
+  },
+  "StopOrder": {
+    "cancelReason": [
+      "LinkedFill",
+      "Owner",
+      null
+    ]
+  }
+}
