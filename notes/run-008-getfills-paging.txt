@@ -1,0 +1,9 @@
+pageSize  50: returned 16843 (true 16843), unique 16779, duplicated 64, missing 64, quote-volume error 14587.077018 USDso, e.g. missing 24454642_4, 24454642_9, 24455199_30
+pageSize 100: returned 16843 (true 16843), unique 16818, duplicated 25, missing 25, quote-volume error -1549.124469 USDso, e.g. missing 24455815_30, 24455815_79, 24455815_94
+pageSize 500: returned 16843 (true 16843), unique 16836, duplicated 7, missing 7, quote-volume error -3774.065445 USDso, e.g. missing 24463367_95, 24475946_73, 24475946_78
+{
+  "indexerFills": 16843,
+  "trueQuoteVolume": "17961498.656188",
+  "blocksWithMoreThanOneFill": 3307
+}
+FAIL: 3/3 page sizes lose fills in a fixed block window (worst: 64 of 16843 missing, each replaced by a duplicate)

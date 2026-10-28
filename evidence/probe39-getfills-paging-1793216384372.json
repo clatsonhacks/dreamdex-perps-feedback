@@ -1,0 +1,119 @@
+{
+  "pool": "0x4181dd08e73bbcdd1ba3e615a18f6abd941b94c0",
+  "window": [
+    24300000,
+    24500000
+  ],
+  "indexerRows": 16843,
+  "blocksWithMoreThanOneFill": 3307,
+  "runs": [
+    {
+      "pageSize": 50,
+      "returned": 16843,
+      "unique": 16779,
+      "duplicated": 64,
+      "missing": 64,
+      "missingSample": [
+        {
+          "id": "24454642_4",
+          "blockNumber": "24454642",
+          "timestamp": "1792097109",
+          "quantity": "13000"
+        },
+        {
+          "id": "24454642_9",
+          "blockNumber": "24454642",
+          "timestamp": "1792097109",
+          "quantity": "14000"
+        },
+        {
+          "id": "24455199_30",
+          "blockNumber": "24455199",
+          "timestamp": "1792097165",
+          "quantity": "2431000"
+        }
+      ]
+    },
+    {
+      "pageSize": 100,
+      "returned": 16843,
+      "unique": 16818,
+      "duplicated": 25,
+      "missing": 25,
+      "missingSample": [
+        {
+          "id": "24455815_30",
+          "blockNumber": "24455815",
+          "timestamp": "1792097227",
+          "quantity": "13000"
+        },
+        {
+          "id": "24455815_79",
+          "blockNumber": "24455815",
+          "timestamp": "1792097227",
+          "quantity": "5469000"
+        },
+        {
+          "id": "24455815_94",
+          "blockNumber": "24455815",
+          "timestamp": "1792097227",
+          "quantity": "6013000"
+        }
+      ]
+    },
+    {
+      "pageSize": 250,
+      "returned": 16843,
+      "unique": 16834,
+      "duplicated": 9,
+      "missing": 9,
+      "missingSample": [
+        {
+          "id": "24455199_30",
+          "blockNumber": "24455199",
+          "timestamp": "1792097165",
+          "quantity": "2431000"
+        },
+        {
+          "id": "24463367_95",
+          "blockNumber": "24463367",
+          "timestamp": "1792097982",
+          "quantity": "941000"
+        },
+        {
+          "id": "24465839_45",
+          "blockNumber": "24465839",
+          "timestamp": "1792098230",
+          "quantity": "14000"
+        }
+      ]
+    },
+    {
+      "pageSize": 500,
+      "returned": 16843,
+      "unique": 16836,
+      "duplicated": 7,
+      "missing": 7,
+      "missingSample": [
+        {
+          "id": "24463367_95",
+          "blockNumber": "24463367",
+          "timestamp": "1792097982",
+          "quantity": "941000"
+        },
+        {
+          "id": "24475946_73",
+          "blockNumber": "24475946",
+          "timestamp": "1792099241",
+          "quantity": "13000"
+        },
+        {
+          "id": "24475946_78",
+          "blockNumber": "24475946",
+          "timestamp": "1792099241",
+          "quantity": "13000"
+        }
+      ]
+    }
+  ]
+}

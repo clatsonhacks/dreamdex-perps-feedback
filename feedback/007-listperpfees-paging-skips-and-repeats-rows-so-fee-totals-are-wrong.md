@@ -2,7 +2,7 @@
 Severity: normal
 Area: SDK
 
-**Reported:** first published in this repo on 2026-10-28 (UTC). Found the same day, while reconciling 004.
+**Reported:** first published in this repo on 2026-10-28 19:36 UTC (commit `e73975d`). Found the same day, while reconciling 004.
 
 **Map cells:** S10/C, S11/A
 
@@ -87,6 +87,10 @@ I was reconciling the liquidation-fee recipient's on-chain balance (see 004) wit
 - **Wrong fee totals, silently.** Any fee report, accounting job or dashboard that pages `listPerpFees` and sums `amount`, exactly as the SDK docs instruct, gets a wrong total. It can be wrong in either direction, it changes with page size, and no error or count mismatch flags it.
 - **Wrong reconciliations.** A missing row is a real fee charged to a real trader, so per-account fee histories can silently omit charges. My own earlier fee totals in 004 were low by this amount until I found it.
 - **The problem grows over time.** More liquidations per second means more tied timestamps, and so more boundaries where rows can be lost.
+
+## Related
+
+- 008 in this repo: the same missing tiebreaker on `getFills` / `getUserFills`, which loses trades.
 
 ## Suggested fix
 

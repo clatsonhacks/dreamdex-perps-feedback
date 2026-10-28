@@ -1,0 +1,58 @@
+{
+  "at": "2026-10-28T19:42:34.699Z",
+  "pool": "0x4181dd08e73bbcdd1ba3e615a18f6abd941b94c0",
+  "window": {
+    "fromBlock": 24300000,
+    "toBlock": 24500000
+  },
+  "indexerFills": 16843,
+  "trueQuoteVolume": "17961498.656188",
+  "blocksWithMoreThanOneFill": 3307,
+  "runs": [
+    {
+      "pageSize": 50,
+      "returned": 16843,
+      "unique": 16779,
+      "duplicated": 64,
+      "missing": 64,
+      "quoteVolumeError": "14587.077018",
+      "missingSample": [
+        "24454642_4",
+        "24454642_9",
+        "24455199_30",
+        "24455199_35",
+        "24455199_40"
+      ]
+    },
+    {
+      "pageSize": 100,
+      "returned": 16843,
+      "unique": 16818,
+      "duplicated": 25,
+      "missing": 25,
+      "quoteVolumeError": "-1549.124469",
+      "missingSample": [
+        "24455815_30",
+        "24455815_79",
+        "24455815_94",
+        "24463367_95",
+        "24464484_10"
+      ]
+    },
+    {
+      "pageSize": 500,
+      "returned": 16843,
+      "unique": 16836,
+      "duplicated": 7,
+      "missing": 7,
+      "quoteVolumeError": "-3774.065445",
+      "missingSample": [
+        "24463367_95",
+        "24475946_73",
+        "24475946_78",
+        "24475946_83",
+        "24482953_105"
+      ]
+    }
+  ]
+}
