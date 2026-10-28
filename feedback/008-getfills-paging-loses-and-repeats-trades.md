@@ -2,7 +2,7 @@
 Severity: normal
 Area: SDK
 
-**Reported:** first published in this repo on 2026-10-28 (UTC). Found the same day.
+**Reported:** first published in this repo on 2026-10-28 19:43 UTC (commit `ca37f53`). Found the same day.
 
 **Map cells:** S10/B, S11/B
 

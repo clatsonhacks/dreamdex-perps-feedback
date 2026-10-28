@@ -14,7 +14,7 @@ All times UTC. "Published" is the first commit containing the item in this repo;
 | 005 | 2026-10-26 | **2026-10-26 19:06** | Published (commit `1435fae`) |
 | 006 | 2026-10-28 | **2026-10-28 19:17** | Published (commit `6e48a78`); corrected the same day (the indexer keeps the reason and amount; the SDK drops them) |
 | 007 | 2026-10-28 | **2026-10-28 19:36** | Published (commit `e73975d`) |
-| 008 | 2026-10-28 | **2026-10-28** | Published (see git history for the exact commit time) |
+| 008 | 2026-10-28 | **2026-10-28 19:43** | Published (commit `ca37f53`) |
 
 Each file in `feedback/` repeats its own date on a **Reported:** line near the top.
 
