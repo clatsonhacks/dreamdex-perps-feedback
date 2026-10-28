@@ -1,0 +1,19 @@
+{
+  "at": "2026-10-26T17:31:46.907Z",
+  "kinds": {
+    "PositionLiquidated": 1397,
+    "KeeperReward": 1315,
+    "AccountLiquidated": 1969,
+    "TakeoverBandClamped": 146,
+    "PositionTransferred": 3,
+    "PositionTakenOver": 3,
+    "CloseOutMarginSettled": 3,
+    "CoverageDeclined": 2,
+    "ResidualBackedByOpenPnl": 2
+  },
+  "keeperRewardRows": 1315,
+  "withAmount": 1315,
+  "rewardTotal": "91991645815584923931",
+  "noFeeSamples": [],
+  "feeTxs": 1282
+}

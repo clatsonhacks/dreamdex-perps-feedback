@@ -2,6 +2,8 @@
 Severity: normal
 Area: docs
 
+**Reported:** first published in this repo on 2026-10-26 16:58 UTC (commit `5fea0f4`) and submitted in DoraHacks Build 50378 the same day. Found 2026-10-22. Re-checked 2026-10-26.
+
 **Map cells:** S01/B, S13/B, S13/G | **Lead:** new
 
 ## Summary
@@ -78,6 +80,6 @@ ADL has not run on Hideki yet (the Insurance Fund ledger has no `TierDebited` or
 
 Either raise or remove the scan cap for large sides (or rank in pages), so the ranker always decides the order. Or document the fallback: on the Margin & Liquidations page, state that sides with more than `getMaxAdlScanPerCall()` holders are deleveraged in holder-list order, and say what the ADL column shows for such a position.
 
-## Related / duplicates checked
+## Related
 
-Searched 37 public feedback repos on 2026-10-22 for `storageOrder`, `scan cap`, `MaxAdlScan`, `storage order`, `ADL column`, `five bars`. None report this. Existing ADL mentions concern backstop bidders ("docs say none are registered") and an ADL-queue sample in recon notes.
+- 003 in this repo: the linked-wallet netting that the ranked ADL order is supposed to apply is also not wired.

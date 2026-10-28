@@ -2,6 +2,8 @@
 Severity: normal
 Area: contracts
 
+**Reported:** first published in this repo on 2026-10-26 16:58 UTC (commit `5fea0f4`) and submitted in DoraHacks Build 50378 the same day. Found 2026-10-22. Re-checked 2026-10-26.
+
 **Map cells:** S13/A, S13/B, S02/A | **Lead:** new
 
 ## Summary
@@ -72,6 +74,6 @@ Limits: one link exists on Hideki and ADL has not run yet, so this is latent. It
 
 Call the engine's registry setter with the bank's registry, or document on the perps developer page and in `PERPS.md` that ADL netting is not enabled on this deployment. Consider including the engine-vs-bank registry match in `fullyWired`, or exposing it from `getLiquidationEngineConfig`, which today returns no registry field.
 
-## Related / duplicates checked
+## Related
 
-Searched 37 public feedback repos on 2026-10-22 for `getLinkedWalletRegistry`, `netting`, `maturesAt`, `fullyWired`. `fullyWired: true` appears only as a reported value in two repos' evidence tables; no one compares the two registries.
+- 005 in this repo: the SDK's link-status read is also wrong during the link's first hour, the same maturity window that would gate netting.

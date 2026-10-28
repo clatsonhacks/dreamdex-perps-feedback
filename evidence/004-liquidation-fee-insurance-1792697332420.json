@@ -1,0 +1,96 @@
+{
+  "at": "2026-10-22T19:28:52.420Z",
+  "insuranceFund": "0x50826894D47C6D4f3BeA38BFDC7Dc5c5be171b80",
+  "partA": {
+    "liquidationFeeRows": 1022,
+    "liquidationFeeTotal": "140838.085658863741916788",
+    "oldest": "1790685330",
+    "newest": "1792695900",
+    "insuranceLedgerKinds": {
+      "TierFunded": 10,
+      "TierWithdrawn": 1
+    },
+    "totalTierBalances": "1660000",
+    "insuranceFundBankAccount": "1660000",
+    "tiers": [
+      {
+        "tier": 0,
+        "chainBalance": "0",
+        "ledgerReplay": "0",
+        "liquidationFeesTaggedForTier": "0",
+        "pools": "0"
+      },
+      {
+        "tier": 1,
+        "chainBalance": "1050000",
+        "ledgerReplay": "1050000",
+        "liquidationFeesTaggedForTier": "71683.740179704761250475",
+        "pools": "3"
+      },
+      {
+        "tier": 2,
+        "chainBalance": "260000",
+        "ledgerReplay": "260000",
+        "liquidationFeesTaggedForTier": "68653.896961806526245869",
+        "pools": "10"
+      },
+      {
+        "tier": 3,
+        "chainBalance": "350000",
+        "ledgerReplay": "350000",
+        "liquidationFeesTaggedForTier": "500.448517352454420444",
+        "pools": "8"
+      },
+      {
+        "tier": 4,
+        "chainBalance": "0",
+        "ledgerReplay": "0",
+        "liquidationFeesTaggedForTier": "0",
+        "pools": "0"
+      },
+      {
+        "tier": 5,
+        "chainBalance": "0",
+        "ledgerReplay": "0",
+        "liquidationFeesTaggedForTier": "0",
+        "pools": "0"
+      }
+    ]
+  },
+  "partB": {
+    "tx": "0x432a26feb292abbfbd8612d4a3191cbdb5a64b1e2c54eb2f36c906aa60689c20",
+    "block": "30438732",
+    "feeRow": {
+      "id": "0x432a26feb292abbfbd8612d4a3191cbdb5a64b1e2c54eb2f36c906aa60689c20_64",
+      "account": "0x72eacdc50f4cf36c7c90e333e6637bb5096dbe1a",
+      "pool": "0xd9b6a347a3ae9fd6ba21179d3343f2c8a922f697",
+      "amount": "508323420000000000",
+      "isRebate": false,
+      "kind": "LiquidationFee",
+      "insurancePortion": "508323420000000000",
+      "tier": "3",
+      "fillNotional": "50832342000000000000",
+      "builder": null,
+      "timestamp": "1792695900",
+      "txHash": "0x432a26feb292abbfbd8612d4a3191cbdb5a64b1e2c54eb2f36c906aa60689c20"
+    },
+    "accountDelta": "-9.519249174627412079",
+    "insuranceFundBankAccountDelta": "0",
+    "tiersBefore": [
+      "0",
+      "1050000",
+      "260000",
+      "350000",
+      "0",
+      "0"
+    ],
+    "tiersAfter": [
+      "0",
+      "1050000",
+      "260000",
+      "350000",
+      "0",
+      "0"
+    ]
+  }
+}

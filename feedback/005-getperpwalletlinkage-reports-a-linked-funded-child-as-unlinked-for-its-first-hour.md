@@ -2,6 +2,8 @@
 Severity: normal
 Area: SDK
 
+**Reported:** first published in this repo on 2026-10-26 19:06 UTC (commit `1435fae`). Found the same day during a live two-wallet test.
+
 **Map cells:** S11/B, S11/F, S13/A | **Lead:** found during a live linked-wallet test
 
 ## Summary
@@ -98,12 +100,9 @@ Either:
 
 If hiding the group until maturity is intended (for ADL netting), document it on `PerpWalletLinkage.main`, `members`, `isChild` and `isMain`, and in `PERPS.md:712` and `:774`. Also point status UIs and the pre-accept check at `mainOf` and `groupOf` instead.
 
-## Related / duplicates checked
+## Related
 
-I searched 56 public feedback repos (refreshed 2026-10-27) for `linkageOf`, `getPerpWalletLinkage`, `isChild`, `maturesAt` and "maturity". Closest:
-
-- swiftbotlab #37: "SDK linked-wallet reads are case-sensitive: lowercase main reads as unlinked". That issue is about address case on a mature link. This report is about checksummed addresses on an immature link, where the contract itself returns an empty group.
-- My own 003 (ADL netting unwired) is about the engine registry. This report is about the read surface the SDK documents for link status.
+- 003 in this repo (ADL netting unwired) is about the LiquidationEngine's registry. This report is about the read surface the SDK documents for link status.
 
 ## Environment
 

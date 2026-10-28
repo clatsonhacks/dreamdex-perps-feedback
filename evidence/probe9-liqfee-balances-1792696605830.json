@@ -1,0 +1,32 @@
+{
+  "tx": "0xdd5fd66cde540dda6b4d4a1ca476f9ee6ba7a140dbcd8f44c79ce6f4d6d4db4a",
+  "block": "30359639",
+  "txIndex": 0,
+  "account": {
+    "before": {
+      "unlocked": "1260153118908456394882",
+      "locked": "0",
+      "total": "1260153118908456394882"
+    },
+    "after": {
+      "unlocked": "667160106669511103127",
+      "locked": "0",
+      "total": "667160106669511103127"
+    },
+    "delta": "-592993012238945291755"
+  },
+  "insuranceFund": {
+    "before": {
+      "unlocked": "1660000000000000000000000",
+      "locked": "0",
+      "total": "1660000000000000000000000"
+    },
+    "after": {
+      "unlocked": "1660000000000000000000000",
+      "locked": "0",
+      "total": "1660000000000000000000000"
+    },
+    "delta": "0"
+  },
+  "txsInBlock": 7
+}

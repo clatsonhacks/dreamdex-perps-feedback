@@ -1,0 +1,99 @@
+{
+  "liquidationFeeRows": 1418,
+  "liquidationFeeTotal": "225706.378729210629580422",
+  "oldest": "1790685330",
+  "newest": "1793193626",
+  "insuranceLedgerKinds": {
+    "TierFunded": 10,
+    "TierWithdrawn": 1
+  },
+  "totalTierBalances": "1660000",
+  "insuranceFundBankAccount": "1660000",
+  "tiers": [
+    {
+      "tier": 0,
+      "chainBalance": "0",
+      "ledgerReplay": "0",
+      "liquidationFeesChargedInTier": "0",
+      "indexedInsurancePortion": "0",
+      "pools": "0"
+    },
+    {
+      "tier": 1,
+      "chainBalance": "1050000",
+      "ledgerReplay": "1050000",
+      "liquidationFeesChargedInTier": "118621.131853554084466893",
+      "indexedInsurancePortion": "0",
+      "pools": "3"
+    },
+    {
+      "tier": 2,
+      "chainBalance": "260000",
+      "ledgerReplay": "260000",
+      "liquidationFeesChargedInTier": "106111.218266484090693085",
+      "indexedInsurancePortion": "0",
+      "pools": "10"
+    },
+    {
+      "tier": 3,
+      "chainBalance": "350000",
+      "ledgerReplay": "350000",
+      "liquidationFeesChargedInTier": "974.028609172454420444",
+      "indexedInsurancePortion": "0",
+      "pools": "8"
+    },
+    {
+      "tier": 4,
+      "chainBalance": "0",
+      "ledgerReplay": "0",
+      "liquidationFeesChargedInTier": "0",
+      "indexedInsurancePortion": "0",
+      "pools": "0"
+    },
+    {
+      "tier": 5,
+      "chainBalance": "0",
+      "ledgerReplay": "0",
+      "liquidationFeesChargedInTier": "0",
+      "indexedInsurancePortion": "0",
+      "pools": "0"
+    }
+  ]
+}
+{
+  "tx": "0x88b153ace3aaafab447ac2e6e09f7a29e3ac495cb7eae9164b4f6d4ad8e9f168",
+  "block": "35404495",
+  "feeRow": {
+    "id": "0x88b153ace3aaafab447ac2e6e09f7a29e3ac495cb7eae9164b4f6d4ad8e9f168_21",
+    "account": "0x5521160e05bb130783e003f746f03d9d31ea1e69",
+    "pool": "0x63b47ed4a7de0fde659b0d82441dd74828b7297a",
+    "amount": "289193296000000000000",
+    "isRebate": false,
+    "kind": "LiquidationFee",
+    "insurancePortion": "0",
+    "tier": "2",
+    "fillNotional": "28919329600000000000000",
+    "builder": null,
+    "timestamp": "1793193626",
+    "txHash": "0x88b153ace3aaafab447ac2e6e09f7a29e3ac495cb7eae9164b4f6d4ad8e9f168"
+  },
+  "accountDelta": "-686.744852103520323175",
+  "insuranceFundBankAccountDelta": "0",
+  "tiersBefore": [
+    "0",
+    "1050000",
+    "260000",
+    "350000",
+    "0",
+    "0"
+  ],
+  "tiersAfter": [
+    "0",
+    "1050000",
+    "260000",
+    "350000",
+    "0",
+    "0"
+  ]
+}
+FAIL: 225706.378729210629580422 USDso of liquidation fees (1418 rows) charged in tiered markets; every Insurance Fund tier still equals its top-ups minus withdrawals, and the ledger has no TierCredited row

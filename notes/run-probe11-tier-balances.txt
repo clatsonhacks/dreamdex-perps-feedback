@@ -1,0 +1,15 @@
+== fee block 30438732
+block 30438731n tiers 0 | 1050000 | 260000 | 350000 | 0 | 0 total 1660000
+block 30438732n tiers 0 | 1050000 | 260000 | 350000 | 0 | 0 total 1660000
+bank.getInsuranceFundAddress 0x50826894D47C6D4f3BeA38BFDC7Dc5c5be171b80
+bank.isInsuranceFundCoverageEnabled(pool) true
+== fee block 30417995
+block 30417994n tiers 0 | 1050000 | 260000 | 350000 | 0 | 0 total 1660000
+block 30417995n tiers 0 | 1050000 | 260000 | 350000 | 0 | 0 total 1660000
+bank.getInsuranceFundAddress 0x50826894D47C6D4f3BeA38BFDC7Dc5c5be171b80
+bank.isInsuranceFundCoverageEnabled(pool) true
+== fee block 30359639
+block 30359638n tiers 0 | 1050000 | 260000 | 350000 | 0 | 0 total 1660000
+block 30359639n tiers 0 | 1050000 | 260000 | 350000 | 0 | 0 total 1660000
+bank.getInsuranceFundAddress 0x50826894D47C6D4f3BeA38BFDC7Dc5c5be171b80
+bank.isInsuranceFundCoverageEnabled(pool) true

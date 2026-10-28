@@ -1,0 +1,57 @@
+{
+  "liquidationFeeRows": 1321,
+  "liquidationFeeTotal": "203879.244684608272957015",
+  "oldest": "1790685330",
+  "newest": "1793004443",
+  "insuranceLedgerKinds": {
+    "TierFunded": 10,
+    "TierWithdrawn": 1
+  },
+  "totalTierBalances": "1660000",
+  "insuranceFundBankAccount": "1660000",
+  "tiers": [
+    {
+      "tier": 0,
+      "chainBalance": "0",
+      "ledgerReplay": "0",
+      "liquidationFeesTaggedForTier": "0",
+      "pools": "0"
+    },
+    {
+      "tier": 1,
+      "chainBalance": "1050000",
+      "ledgerReplay": "1050000",
+      "liquidationFeesTaggedForTier": "112909.306198567413170344",
+      "pools": "3"
+    },
+    {
+      "tier": 2,
+      "chainBalance": "260000",
+      "ledgerReplay": "260000",
+      "liquidationFeesTaggedForTier": "89996.406424868405366227",
+      "pools": "10"
+    },
+    {
+      "tier": 3,
+      "chainBalance": "350000",
+      "ledgerReplay": "350000",
+      "liquidationFeesTaggedForTier": "973.532061172454420444",
+      "pools": "8"
+    },
+    {
+      "tier": 4,
+      "chainBalance": "0",
+      "ledgerReplay": "0",
+      "liquidationFeesTaggedForTier": "0",
+      "pools": "0"
+    },
+    {
+      "tier": 5,
+      "chainBalance": "0",
+      "ledgerReplay": "0",
+      "liquidationFeesTaggedForTier": "0",
+      "pools": "0"
+    }
+  ]
+}
+FAIL: 203879.244684608272957015 USDso of liquidation fees (1321 rows) tagged for Insurance Fund tiers; every tier still equals its top-ups minus withdrawals, and the ledger has no TierCredited row

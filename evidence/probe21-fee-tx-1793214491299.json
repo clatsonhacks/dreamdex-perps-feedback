@@ -1,0 +1,287 @@
+{
+  "tx": "0x88b153ace3aaafab447ac2e6e09f7a29e3ac495cb7eae9164b4f6d4ad8e9f168",
+  "block": "35404495",
+  "logs": [
+    {
+      "i": 2,
+      "ev": "FundingSettled",
+      "at": "0x478769e1177c0773c43a593dccc4ad15f15f1394",
+      "args": {
+        "account": "0x5521160E05bB130783E003F746F03d9D31ea1e69",
+        "perpPool": "0x63B47eD4A7DE0FdE659b0d82441dD74828b7297A",
+        "payment": "-19048912742582450525"
+      }
+    },
+    {
+      "i": 3,
+      "ev": "CollateralUnlocked",
+      "at": "0x478769e1177c0773c43a593dccc4ad15f15f1394",
+      "args": {
+        "account": "0x47537E3A3ea6e9391F3B26Ea45618db6828c8bfF",
+        "perpPool": "0x63B47eD4A7DE0FdE659b0d82441dD74828b7297A",
+        "amount": "99755150000000000000"
+      }
+    },
+    {
+      "i": 4,
+      "ev": "PositionUpdated",
+      "at": "0x478769e1177c0773c43a593dccc4ad15f15f1394",
+      "args": {
+        "account": "0x5521160E05bB130783E003F746F03d9D31ea1e69",
+        "perpPool": "0x63B47eD4A7DE0FdE659b0d82441dD74828b7297A",
+        "newSize": "351580000",
+        "avgEntryPrice": "81020575753551985124",
+        "realizedPnl": "-27980776566193068547",
+        "entryFundingIndex": "325566167597462833078828498210500000"
+      }
+    },
+    {
+      "i": 5,
+      "ev": "PositionUpdated",
+      "at": "0x478769e1177c0773c43a593dccc4ad15f15f1394",
+      "args": {
+        "account": "0x47537E3A3ea6e9391F3B26Ea45618db6828c8bfF",
+        "perpPool": "0x63B47eD4A7DE0FdE659b0d82441dD74828b7297A",
+        "newSize": "1798660000",
+        "avgEntryPrice": "80162360880841608729",
+        "realizedPnl": "0",
+        "entryFundingIndex": "325566167597462833078828498210500000"
+      }
+    },
+    {
+      "i": 6,
+      "ev": "OpenInterestUpdated",
+      "at": "0x63b47ed4a7de0fde659b0d82441dd74828b7297a",
+      "args": {
+        "openInterest": "33521410000"
+      }
+    },
+    {
+      "i": 7,
+      "ev": "OrderFilled",
+      "at": "0x63b47ed4a7de0fde659b0d82441dd74828b7297a",
+      "args": {
+        "takerOrderId": "1328165573307093104853",
+        "makerOrderId": "1807780919223541446862",
+        "quantityFilled": "24970000",
+        "takerRemainingQuantity": "351580000",
+        "makerRemainingQuantity": "0",
+        "fillPrice": "79900000000000000000"
+      }
+    },
+    {
+      "i": 8,
+      "ev": "CollateralUnlocked",
+      "at": "0x478769e1177c0773c43a593dccc4ad15f15f1394",
+      "args": {
+        "account": "0x47537E3A3ea6e9391F3B26Ea45618db6828c8bfF",
+        "perpPool": "0x63B47eD4A7DE0FdE659b0d82441dD74828b7297A",
+        "amount": "349119300000000000000"
+      }
+    },
+    {
+      "i": 9,
+      "ev": "PositionUpdated",
+      "at": "0x478769e1177c0773c43a593dccc4ad15f15f1394",
+      "args": {
+        "account": "0x5521160E05bB130783E003F746F03d9D31ea1e69",
+        "perpPool": "0x63B47eD4A7DE0FdE659b0d82441dD74828b7297A",
+        "newSize": "264180000",
+        "avgEntryPrice": "81020575753551985124",
+        "realizedPnl": "-98812320860443499838",
+        "entryFundingIndex": "325566167597462833078828498210500000"
+      }
+    },
+    {
+      "i": 10,
+      "ev": "PositionUpdated",
+      "at": "0x478769e1177c0773c43a593dccc4ad15f15f1394",
+      "args": {
+        "account": "0x47537E3A3ea6e9391F3B26Ea45618db6828c8bfF",
+        "perpPool": "0x63B47eD4A7DE0FdE659b0d82441dD74828b7297A",
+        "newSize": "1886060000",
+        "avgEntryPrice": "80149739680569318026",
+        "realizedPnl": "0",
+        "entryFundingIndex": "325566167597462833078828498210500000"
+      }
+    },
+    {
+      "i": 11,
+      "ev": "OpenInterestUpdated",
+      "at": "0x63b47ed4a7de0fde659b0d82441dd74828b7297a",
+      "args": {
+        "openInterest": "33521410000"
+      }
+    },
+    {
+      "i": 12,
+      "ev": "OrderFilled",
+      "at": "0x63b47ed4a7de0fde659b0d82441dd74828b7297a",
+      "args": {
+        "takerOrderId": "1328165573307093104853",
+        "makerOrderId": "18446744073714940111",
+        "quantityFilled": "87400000",
+        "takerRemainingQuantity": "264180000",
+        "makerRemainingQuantity": "0",
+        "fillPrice": "79890000000000000000"
+      }
+    },
+    {
+      "i": 13,
+      "ev": "CollateralUnlocked",
+      "at": "0x478769e1177c0773c43a593dccc4ad15f15f1394",
+      "args": {
+        "account": "0x47537E3A3ea6e9391F3B26Ea45618db6828c8bfF",
+        "perpPool": "0x63B47eD4A7DE0FdE659b0d82441dD74828b7297A",
+        "amount": "997092030000000000000"
+      }
+    },
+    {
+      "i": 14,
+      "ev": "PositionUpdated",
+      "at": "0x478769e1177c0773c43a593dccc4ad15f15f1394",
+      "args": {
+        "account": "0x5521160E05bB130783E003F746F03d9D31ea1e69",
+        "perpPool": "0x63B47eD4A7DE0FdE659b0d82441dD74828b7297A",
+        "newSize": "14470000",
+        "avgEntryPrice": "81020575753551985124",
+        "realizedPnl": "-289807371419466205315",
+        "entryFundingIndex": "325566167597462833078828498210500000"
+      }
+    },
+    {
+      "i": 15,
+      "ev": "PositionUpdated",
+      "at": "0x478769e1177c0773c43a593dccc4ad15f15f1394",
+      "args": {
+        "account": "0x47537E3A3ea6e9391F3B26Ea45618db6828c8bfF",
+        "perpPool": "0x63B47eD4A7DE0FdE659b0d82441dD74828b7297A",
+        "newSize": "2135770000",
+        "avgEntryPrice": "80115863890744119430",
+        "realizedPnl": "0",
+        "entryFundingIndex": "325566167597462833078828498210500000"
+      }
+    },
+    {
+      "i": 16,
+      "ev": "OpenInterestUpdated",
+      "at": "0x63b47ed4a7de0fde659b0d82441dd74828b7297a",
+      "args": {
+        "openInterest": "33521410000"
+      }
+    },
+    {
+      "i": 17,
+      "ev": "OrderFilled",
+      "at": "0x63b47ed4a7de0fde659b0d82441dd74828b7297a",
+      "args": {
+        "takerOrderId": "1328165573307093104853",
+        "makerOrderId": "92233720368553146577",
+        "quantityFilled": "249710000",
+        "takerRemainingQuantity": "14470000",
+        "makerRemainingQuantity": "0",
+        "fillPrice": "79860000000000000000"
+      }
+    },
+    {
+      "i": 18,
+      "ev": "OrderPlaced",
+      "at": "0x63b47ed4a7de0fde659b0d82441dd74828b7297a",
+      "args": {
+        "orderId": "1328165573307093104853",
+        "placedOrder": {
+          "orderId": "1328165573307093104853",
+          "isBid": false,
+          "owner": "0x5521160E05bB130783E003F746F03d9D31ea1e69",
+          "userData": "0",
+          "price": "79640000000000000000",
+          "fullQuantity": "376550000",
+          "quantityRemaining": "14470000",
+          "expireTimestampNs": "18446744073709551615"
+        }
+      }
+    },
+    {
+      "i": 19,
+      "ev": "PositionLiquidated",
+      "at": "0xa66d3c24ad4a389d863846905d8173e1017e9f4d",
+      "args": {
+        "account": "0x5521160E05bB130783E003F746F03d9D31ea1e69",
+        "perpPool": "0x63B47eD4A7DE0FdE659b0d82441dD74828b7297A",
+        "sizeDelta": "-362080000",
+        "markPrice": "80061479280571500000"
+      }
+    },
+    {
+      "i": 20,
+      "ev": "?",
+      "at": "0xed7993a74dae1e6656b704a424dcd8711aaf4f72"
+    },
+    {
+      "i": 21,
+      "ev": "LiquidationFeeCharged",
+      "at": "0xa66d3c24ad4a389d863846905d8173e1017e9f4d",
+      "args": {
+        "account": "0x5521160E05bB130783E003F746F03d9D31ea1e69",
+        "perpPool": "0x63B47eD4A7DE0FdE659b0d82441dD74828b7297A",
+        "tier": "2",
+        "fillNotional": "28919329600000000000000",
+        "amount": "289193296000000000000"
+      }
+    },
+    {
+      "i": 22,
+      "ev": "LiquidationKeeperRewardPaid",
+      "at": "0xa66d3c24ad4a389d863846905d8173e1017e9f4d",
+      "args": {
+        "account": "0x5521160E05bB130783E003F746F03d9D31ea1e69",
+        "keeper": "0x03CA1F61c5A475951F69F51BD16523075Fdfb1cc",
+        "amount": "70000000000000000"
+      }
+    },
+    {
+      "i": 23,
+      "ev": "?",
+      "at": "0xa66d3c24ad4a389d863846905d8173e1017e9f4d"
+    },
+    {
+      "i": 24,
+      "ev": "AccountLiquidated",
+      "at": "0xa66d3c24ad4a389d863846905d8173e1017e9f4d",
+      "args": {
+        "account": "0x5521160E05bB130783E003F746F03d9D31ea1e69",
+        "positionsProcessed": "1",
+        "stageReached": 1,
+        "marginStatusBefore": 2,
+        "marginStatusAfter": 0
+      }
+    },
+    {
+      "i": 25,
+      "ev": "?",
+      "at": "0xed7993a74dae1e6656b704a424dcd8711aaf4f72"
+    },
+    {
+      "i": 26,
+      "ev": "?",
+      "at": "0x03ca1f61c5a475951f69f51bd16523075fdfb1cc"
+    }
+  ],
+  "nonZeroBankDeltas": {
+    "0x5521160E05bB130783E003F746F03d9D31ea1e69": "-686.744852103520323175"
+  },
+  "checkedAddresses": [
+    "0x50826894D47C6D4f3BeA38BFDC7Dc5c5be171b80",
+    "0x478769E1177C0773c43A593DCCc4Ad15F15F1394",
+    "0xf48394d6fdcc83d519c7a22c2cf246d210f1932e",
+    "0x478769e1177c0773c43a593dccc4ad15f15f1394",
+    "0x5521160E05bB130783E003F746F03d9D31ea1e69",
+    "0x63B47eD4A7DE0FdE659b0d82441dD74828b7297A",
+    "0x47537E3A3ea6e9391F3B26Ea45618db6828c8bfF",
+    "0x63b47ed4a7de0fde659b0d82441dd74828b7297a",
+    "0xa66d3c24ad4a389d863846905d8173e1017e9f4d",
+    "0xed7993a74dae1e6656b704a424dcd8711aaf4f72",
+    "0x03CA1F61c5A475951F69F51BD16523075Fdfb1cc",
+    "0x03ca1f61c5a475951f69f51bd16523075fdfb1cc"
+  ]
+}

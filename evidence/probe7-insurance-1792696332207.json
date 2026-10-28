@@ -1,0 +1,56 @@
+{
+  "at": "2026-10-22T19:12:09.542Z",
+  "state": {
+    "address": "0x50826894D47C6D4f3BeA38BFDC7Dc5c5be171b80",
+    "maxTiers": "5",
+    "totalBalance": "1660000000000000000000000",
+    "tiers": [
+      {
+        "tier": 0,
+        "balance": "0",
+        "poolCount": "0"
+      },
+      {
+        "tier": 1,
+        "balance": "1050000000000000000000000",
+        "poolCount": "3"
+      },
+      {
+        "tier": 2,
+        "balance": "260000000000000000000000",
+        "poolCount": "10"
+      },
+      {
+        "tier": 3,
+        "balance": "350000000000000000000000",
+        "poolCount": "8"
+      },
+      {
+        "tier": 4,
+        "balance": "0",
+        "poolCount": "0"
+      },
+      {
+        "tier": 5,
+        "balance": "0",
+        "poolCount": "0"
+      }
+    ]
+  },
+  "engine": {
+    "address": "0xA66d3C24Ad4a389d863846905D8173e1017e9F4D",
+    "marginBank": "0x478769E1177C0773c43A593DCCc4Ad15F15F1394",
+    "penaltyBps": "100",
+    "minSpreadBps": "50",
+    "maxSpreadBps": "500",
+    "maxVolumePerBlock": "100000000000000000000000",
+    "bidderCount": "1"
+  },
+  "eventCount": 11,
+  "coveredChecks": [],
+  "replay": {
+    "1": "1050000000000000000000000",
+    "2": "260000000000000000000000",
+    "3": "350000000000000000000000"
+  }
+}

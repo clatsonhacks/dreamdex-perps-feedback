@@ -1,0 +1,14 @@
+{
+  "block": "30438732",
+  "deltas": {
+    "insuranceFund": "0",
+    "liquidationEngine": "0",
+    "feeRecipient": "0",
+    "keeper": "0",
+    "pool": "0",
+    "counterparty": "-36660625017531678",
+    "bankItself": "0",
+    "keeperOwner": "0"
+  },
+  "bankTokenDelta": "-70000000000000000"
+}
