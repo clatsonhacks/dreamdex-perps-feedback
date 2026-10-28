@@ -1,0 +1,54 @@
+{
+  "kind": "LiquidationFee",
+  "pageSize": 500,
+  "sdkRowsReturned": 1418,
+  "sdkUniqueIds": 1414,
+  "indexerRows": 1418,
+  "duplicatedIds": 4,
+  "missingIds": 4,
+  "extraIds": 0,
+  "sdkSum": "225706.378729210629580422",
+  "indexerSum": "226009.343776278272957015",
+  "sdkSumMinusTrue": "-302.965047067643376593",
+  "timestampsSharedByMoreThanOneRow": 201,
+  "missing": [
+    {
+      "id": "0x2f96b2c34a34b4d474e039b87f7abdb50492be3d123c89bf7bee12ccea11884c_64",
+      "amount": "96635686000000000000",
+      "timestamp": "1792093469"
+    },
+    {
+      "id": "0x4bbe58aee35849ef064d6d63d2444cea8da08b2d234d22eab55bd584665881a2_39",
+      "amount": "123227093235006607385",
+      "timestamp": "1792093469"
+    },
+    {
+      "id": "0x597ab34a5ab4474f18fb4ea1de637144964f91a82d587ec6300a94765174c3c4_23",
+      "amount": "83245568500000000000",
+      "timestamp": "1792093469"
+    },
+    {
+      "id": "0x8a0cd8c25334f2e5e1d9111355cb18c7b1c617be86a03b6d2f87a29cee9a3918_35",
+      "amount": "875223694686561466",
+      "timestamp": "1792093469"
+    }
+  ],
+  "duplicated": [
+    {
+      "id": "0x8e6b70adf2ac285f4f3897286c73617fd9a7d260f7404f96461a101ebd0f5242_55",
+      "n": 2
+    },
+    {
+      "id": "0x8e6b70adf2ac285f4f3897286c73617fd9a7d260f7404f96461a101ebd0f5242_47",
+      "n": 2
+    },
+    {
+      "id": "0x8e6b70adf2ac285f4f3897286c73617fd9a7d260f7404f96461a101ebd0f5242_31",
+      "n": 2
+    },
+    {
+      "id": "0x8e6b70adf2ac285f4f3897286c73617fd9a7d260f7404f96461a101ebd0f5242_23",
+      "n": 2
+    }
+  ]
+}

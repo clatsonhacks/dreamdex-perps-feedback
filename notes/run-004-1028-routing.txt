@@ -16,7 +16,7 @@
   },
   "partA": {
     "liquidationFeeRows": 1418,
-    "liquidationFeeTotal": "225706.378729210629580422",
+    "liquidationFeeTotal": "226009.343776278272957015",
     "oldest": "1790685330",
     "newest": "1793193626",
     "insuranceFund": {
@@ -63,4 +63,4 @@
     ]
   }
 }
-FAIL: the SDK says liquidation fees go wholly to an Insurance Fund tier, but 225706.378729210629580422 USDso of them (1418 rows) went to the liquidation fee recipient 0x95F23A563EceE5c6F841d762943D2F2FEc742253 (bank balance 225768.694146222688033084); the fund's tiers still equal their top-ups and getPerpSystemConfig does not expose the recipient: true
+FAIL: the SDK says liquidation fees go wholly to an Insurance Fund tier, but 226009.343776278272957015 USDso of them (1418 rows) went to the liquidation fee recipient 0x95F23A563EceE5c6F841d762943D2F2FEc742253 (bank balance 225768.694146222688033084); the fund's tiers still equal their top-ups and getPerpSystemConfig does not expose the recipient: true

@@ -1,4 +1,4 @@
-# Liquidation fees (225,706 USDso) are documented as Insurance Fund inflow, but the contract pays them to a separate liquidation-fee recipient, one it forbids from being the fund, and the SDK gives no way to find that recipient
+# Liquidation fees (226,009 USDso) are documented as Insurance Fund inflow, but the contract pays them to a separate liquidation-fee recipient, one it forbids from being the fund, and the SDK gives no way to find that recipient
 Severity: normal
 Area: SDK
 
@@ -18,9 +18,9 @@ Every book liquidation emits `LiquidationFeeCharged(account, perpPool, tier, fil
 
 On Hideki none of that happens. Instead:
 
-- **The fee goes to a dedicated recipient.** It is credited to the MarginBank account of `MarginBank.getLiquidationFeeRecipient()` = `0x95F23A563EceE5c6F841d762943D2F2FEc742253`, set on 2026-10-07. In each transaction the recipient gains exactly fee − keeper reward, to the wei. Its balance is now **225,768.69 USDso**.
+- **The fee goes to a dedicated recipient.** It is credited to the MarginBank account of `MarginBank.getLiquidationFeeRecipient()` = `0x95F23A563EceE5c6F841d762943D2F2FEc742253`, set on 2026-10-07. In each transaction the recipient gains exactly fee − keeper reward, to the wei. Its balance is now **225,768.69 USDso**, which reconciles to the wei (see Actual).
 - **The fund cannot be the recipient.** The contract forbids it: the SDK's own error ABI contains `LiquidationFeeRecipientCannotBeInsuranceFund` (`src/contractErrorsAbi.ts:282`).
-- **The fund never receives a fee.** All 1,418 fees (225,706.38 USDso, 2026-09-29 → 2026-10-28) bypass it. Every tier still equals its admin top-ups minus one withdrawal, to the wei, and the fund's ledger has no `TierCredited` row.
+- **The fund never receives a fee.** All 1,418 fees (226,009.34 USDso, 2026-09-29 → 2026-10-28) bypass it. Every tier still equals its admin top-ups minus one withdrawal, to the wei, and the fund's ledger has no `TierCredited` row.
 - **The SDK hides the recipient.** It does not mention `getLiquidationFeeRecipient` anywhere. `client.getPerpSystemConfig()` returns `feeRecipient` (`0xd585…22be`, the trading-fee recipient) and `insuranceFund`, but not the liquidation-fee recipient. An integrator following the SDK cannot find where the fees go.
 - **The indexer changed, the SDK did not.** Between 2026-10-26 and 2026-10-28 the indexer re-wrote every `LiquidationFee` row's `insurancePortion` from `= amount` to `0`. The SDK (0.32.1, still the latest release) was not updated, so its text now contradicts the chain and the indexer.
 
@@ -48,7 +48,7 @@ sdk: { historyTsSaysWhollyToInsuranceFund: true,
        getPerpSystemConfigKeys: [marginBank, collateralToken, perpPoolFactory, liquidationEngine, insuranceFund, feeRecipient, maxLeverageLimit, fullyWired],
        getPerpSystemConfigExposesLiquidationFeeRecipient: false,
        errorAbiHasLiquidationFeeRecipientCannotBeInsuranceFund: true }
-liquidationFeeRows: 1418, liquidationFeeTotal: 225706.378729210629580422
+liquidationFeeRows: 1418, liquidationFeeTotal: 226009.343776278272957015
 insuranceFund: { ledgerKinds: { TierFunded: 10, TierWithdrawn: 1 }, totalTierBalances: 1660000, bankAccount: 1660000, tiersEqualTopUpsMinusWithdrawals: true }
 liquidationFeeRecipient: { address: 0x95F23A563EceE5c6F841d762943D2F2FEc742253, isInsuranceFund: false, bankAccount: 225768.694146222688033084 }
 
@@ -56,7 +56,16 @@ partB (tx 0x88b153ac…f168, block 35,404,495, tier-2 market):
   feeCharged 289.193296, keeperReward 0.07
   recipientDelta 289.123296  (= fee − reward: true)
   insuranceFundBankDelta 0, tiers unchanged (0 | 1050000 | 260000 | 350000 | 0 | 0)
-FAIL: the SDK says liquidation fees go wholly to an Insurance Fund tier, but 225706.378729210629580422 USDso of them (1418 rows) went to the liquidation fee recipient 0x95F2…2253 (bank balance 225768.694146222688033084); the fund's tiers still equal their top-ups and getPerpSystemConfig does not expose the recipient: true
+FAIL: the SDK says liquidation fees go wholly to an Insurance Fund tier, but 226009.343776278272957015 USDso of them (1418 rows) went to the liquidation fee recipient 0x95F2…2253 (bank balance 225768.694146222688033084); the fund's tiers still equal their top-ups and getPerpSystemConfig does not expose the recipient: true
+```
+
+**The whole balance reconciles to the wei:**
+
+```
+  fees charged since the recipient was set (2026-10-07)     225,863.890830038272957015
+− keeper rewards paid in those transactions                     95.981645815584923931
++ 3 liquidations newer than the indexer's latest fee row          0.784962  (0.206966 + 0.483104 + 0.094892, read on chain)
+= 225,768.694146222688033084  = the recipient's MarginBank balance
 ```
 
 The same per-transaction match holds for older fees: tx `0x432a26fe…` (fee 0.50832342, recipient +0.43832342) and tx `0x1070c57b…` (fee 249.8103006, recipient +249.7403006) (`scripts/probe29-liq-fee-recipient.mts`).
@@ -67,9 +76,11 @@ How the indexed `insurancePortion` changed between runs:
 
 | Run | Fee rows | Fees (USDso) | Indexed `insurancePortion` total |
 |---|---|---|---|
-| 2026-10-22 | 1,022 | 140,838.09 | = amount |
-| 2026-10-26 | 1,321 | 203,879.24 | = amount |
-| 2026-10-28 | 1,418 | 225,706.38 | 0 on every row, old rows included (`scripts/probe20-fee-tier-tags.mts`) |
+| 2026-10-22 | 1,022 | 140,838.09* | = amount |
+| 2026-10-26 | 1,321 | 203,879.24* | = amount |
+| 2026-10-28 | 1,418 | 226,009.34 | 0 on every row, old rows included (`scripts/probe20-fee-tier-tags.mts`) |
+
+\* These two totals were summed by paging `client.listPerpFees`, which drops and repeats rows that share a timestamp (007), so they may be slightly off. The 2026-10-28 total is read in a stable order.
 
 ## Evidence
 
@@ -90,8 +101,8 @@ How the indexed `insurancePortion` changed between runs:
 
 ## Impact
 
-- **The backstop looks bigger than it is.** The SDK tells integrators and risk dashboards that liquidation fees capitalise the Insurance Fund, which is the stage that absorbs bad debt before ADL. Anyone sizing that backstop from the docs (fund + fee inflow, or `SUM(insurancePortion)` as of 2026-10-26) overstates it by 225,706 USDso, about 13.6% of the 1,660,000 fund.
-- **The money can't be traced from the SDK.** Nothing in the SDK names the liquidation-fee recipient or exposes its address, so an integrator following the docs cannot reconcile where 225k USDso of fees went. I could not either, until I found the getter outside the SDK.
+- **The backstop looks bigger than it is.** The SDK tells integrators and risk dashboards that liquidation fees capitalise the Insurance Fund, which is the stage that absorbs bad debt before ADL. Anyone sizing that backstop from the docs (fund + fee inflow, or `SUM(insurancePortion)` as of 2026-10-26) overstates it by 226,009 USDso, about 13.6% of the 1,660,000 fund.
+- **The money can't be traced from the SDK.** Nothing in the SDK names the liquidation-fee recipient or exposes its address, so an integrator following the docs cannot reconcile where 226k USDso of fees went. I could not either, until I found the getter outside the SDK.
 - **The read model moved without notice.** The indexer silently re-wrote historical `insurancePortion` values, so a consumer that stored the old numbers now disagrees with the API, with no release note.
 
 ## Suggested fix
@@ -103,3 +114,4 @@ How the indexed `insurancePortion` changed between runs:
 ## Related
 
 - 006 in this repo: the liquidation fees that are skipped instead of charged, which the SDK also does not surface.
+- 007 in this repo: paging `listPerpFees` drops and repeats fee rows, so the fee totals the SDK docs suggest come out wrong.

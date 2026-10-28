@@ -1,0 +1,16 @@
+{
+  "kind": "LiquidationFee",
+  "pageSize": 50,
+  "sdkRowsReturned": 1418,
+  "sdkUniqueIds": 1418,
+  "indexerRows": 1418,
+  "duplicatedIds": 0,
+  "missingIds": 0,
+  "extraIds": 0,
+  "sdkSum": "226009.343776278272957015",
+  "indexerSum": "226009.343776278272957015",
+  "sdkSumMinusTrue": "0",
+  "timestampsSharedByMoreThanOneRow": 201,
+  "missing": [],
+  "duplicated": []
+}

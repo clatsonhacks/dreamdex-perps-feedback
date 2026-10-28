@@ -1,0 +1,76 @@
+{
+  "indexerRows": 1418,
+  "trueSum": "226009.343776278272957015",
+  "runs": [
+    {
+      "pageSize": 50,
+      "returned": 1418,
+      "unique": 1418,
+      "missing": 0,
+      "sumErrorUSDso": "0"
+    },
+    {
+      "pageSize": 100,
+      "returned": 1418,
+      "unique": 1414,
+      "missing": 4,
+      "sumErrorUSDso": "-302.965047067643376593"
+    },
+    {
+      "pageSize": 200,
+      "returned": 1418,
+      "unique": 1414,
+      "missing": 4,
+      "sumErrorUSDso": "-302.965047067643376593"
+    },
+    {
+      "pageSize": 250,
+      "returned": 1418,
+      "unique": 1414,
+      "missing": 4,
+      "sumErrorUSDso": "-302.965047067643376593"
+    },
+    {
+      "pageSize": 300,
+      "returned": 1418,
+      "unique": 1417,
+      "missing": 1,
+      "sumErrorUSDso": "147.18437337"
+    },
+    {
+      "pageSize": 400,
+      "returned": 1418,
+      "unique": 1418,
+      "missing": 0,
+      "sumErrorUSDso": "0"
+    },
+    {
+      "pageSize": 500,
+      "returned": 1418,
+      "unique": 1414,
+      "missing": 4,
+      "sumErrorUSDso": "-302.965047067643376593"
+    },
+    {
+      "pageSize": 500,
+      "returned": 1418,
+      "unique": 1414,
+      "missing": 4,
+      "sumErrorUSDso": "-302.965047067643376593"
+    },
+    {
+      "pageSize": 700,
+      "returned": 1418,
+      "unique": 1418,
+      "missing": 0,
+      "sumErrorUSDso": "0"
+    },
+    {
+      "pageSize": 1000,
+      "returned": 1418,
+      "unique": 1414,
+      "missing": 4,
+      "sumErrorUSDso": "-302.965047067643376593"
+    }
+  ]
+}

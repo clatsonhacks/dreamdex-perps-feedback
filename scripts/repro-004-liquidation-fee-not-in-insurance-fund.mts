@@ -12,7 +12,7 @@
 // Run: npx tsx scripts/repro-004-liquidation-fee-not-in-insurance-fund.mts
 import { writeFileSync, mkdirSync, readFileSync } from "node:fs";
 import { createPublicClient, http, formatUnits, parseAbi, decodeEventLog } from "viem";
-import { chain, client, j, RPC } from "./client.mts";
+import { chain, client, j, RPC, INDEXER } from "./client.mts";
 
 const pc = createPublicClient({ chain, transport: http(RPC) });
 const R = await import("../node_modules/@somnia-chain/markets-sdk/dist/readsAbi.js" as any);
@@ -38,12 +38,15 @@ const sdk = {
 };
 
 // ---- Part A
+// Fee rows straight from the indexer in a stable order (by id). Paging client.listPerpFees() is not
+// stable (it orders by timestamp only, see 007) and drops/repeats rows that share a timestamp.
 const fees: any[] = [];
-for (let offset = 0; ; offset += 500) {
-  const page = (await client.listPerpFees({ kind: "LiquidationFee", limit: 500, offset })) as any[];
-  fees.push(...page);
-  if (page.length < 500) break;
+for (let offset = 0; ; offset += 1000) {
+  const r = (await (await fetch(INDEXER, { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ query: `{ PerpFeeRecord(where:{kind:{_eq:"LiquidationFee"}}, order_by:{id:asc}, limit:1000, offset:${offset}) { id amount timestamp txHash } }` }) })).json()) as any;
+  fees.push(...r.data.PerpFeeRecord);
+  if (r.data.PerpFeeRecord.length < 1000) break;
 }
+fees.sort((a, b) => Number(BigInt(b.timestamp) - BigInt(a.timestamp)));
 const feeTotal = fees.reduce((t, r) => t + BigInt(r.amount), 0n);
 const ledger: any[] = [];
 for (let offset = 0; ; offset += 500) {
